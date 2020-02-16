@@ -50,8 +50,8 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <!-- Fullpage -->
         <link href='./css/fullpage.css' rel='stylesheet'>
-        <!-- Header Menu -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <!-- FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!-- Styles -->
         <link href='./css/styles.css' rel='stylesheet'>
 	</head>
@@ -172,27 +172,188 @@
 				
 				<!-- ABOUT ME -->
 				<div class="section" id="section1">
-                    <p>About Me</p>
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_about">
+                                <div class="document">
+                                    <h1 lang="en">About Me</h1>
+                                    <h1 lang="es">Acerca de mí</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 				
 				<!-- SKILLS -->
 				<div class="section" id="section2">
-                    <p>Skills</p>
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_skills">
+                                <div class="document">
+                                    <h1 lang="en">Skills</h1>
+                                    <h1 lang="es">Herramientas</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 				
 				<!-- PORTFOLIO -->
 				<div class="section" id="section3">
-                    <p>Portfolio</p>
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_port">
+                                <div class="document">
+                                    <h1 lang="en">Portfolio</h1>
+                                    <h1 lang="es">Portafolio</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- EDUCATION -->
 				<div class="section" id="section4">
-                    <p>Education</p>
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_edu">
+                                <div class="document">
+                                    <h1 lang="en">Education</h1>
+                                    <h1 lang="es">Estudios</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- CONTACT -->
 				<div class="section" id="section5">
-                    <p>Contact</p>
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_contact">
+                                <div class="document">
+                                    <h1 lang="en">Contact</h1>
+                                    <h1 lang="es">Contacto</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <div class="container_card" style="background-image: url(&quot./img/email.png&quot);">
+                                <div class="overlay" onclick="gotoPage(1)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p lang="en">E-mail</p>
+                                        <p lang="es">Correo</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem">j.lobolara@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="container_card" style="background-image: url(&quot./img/linkedin.png&quot);">
+                                <div class="overlay" onclick="gotoPage(2)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p>Linkedin</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem">Jose Lobo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="container_card" style="background-image: url(&quot./img/github.png&quot);">
+                                <div class="overlay" onclick="gotoPage(3)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p>Github</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem">joseluislo12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="container_card" style="background-image: url(&quot./img/download.png&quot);">
+                                <div class="overlay" onclick="gotoPage(4)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p lang="en">Resume</p> 
+                                        <p lang="es">Hoja de vida</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem">Resume</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row alling-items-center">
+                        <div class="col-12 text-center" id="col_contact_img">
+                            <div class="contact_img" style="background-color: rgb(130, 3, 3);" onclick="gotoPage(1)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p lang="en">E-mail: j.lobolara@gmail.com</p>
+                                        <p lang="es">Correo: j.lobolara@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_img" style="background-color: #0077B5;" onclick="gotoPage(2)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p>Linkedin: Jose Lobo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_img" style="background-color: #333;" onclick="gotoPage(3)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fab fa-github-square fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p>Github: joseluislo12</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_img" style="background-color: rgba(122, 129, 16, 0.801);" onclick="gotoPage(4)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fas fa-download fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p lang="en">Resume (download)</p>
+                                        <p lang="es">Hoja de vida (descargar)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 			</div>
         </div>
