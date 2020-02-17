@@ -217,14 +217,94 @@
 
                 <!-- EDUCATION -->
 				<div class="section" id="section4">
-                    <div class="row align-items-top">
-                        <div class="col-12 text-center">
-                            <div class="container_title" id="title_edu">
-                                <div class="document">
-                                    <h1 lang="en">Education</h1>
-                                    <h1 lang="es">Estudios</h1>
-                                    <hr class="brace">
+                    <div class="slide" id="slide1">
+                        <div class="row align-items-top">
+                            <div class="col-12 text-center">
+                                <div class="container_title" id="title_edu">
+                                    <div class="document">
+                                        <h1 lang="en">Education</h1>
+                                        <h1 lang="es">Estudios</h1>
+                                        <hr class="brace">
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-top">
+                            <div class="col-xs-12 col-sm offset-md-1 text-center">
+                                <div class="edu_img">
+                                    <a href="https://www.umng.edu.co/" target="_blank"><img src="img/umng.png"></a>
+                                </div>                               
+                            </div>
+                            <div class="col-xs-12 col-sm offset-1 offset-xs-0 text-center">
+                                <div class="wrapper">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <ul id="ul">
+                                                <li lang="en">Bogota, Colombia</li>
+                                                <li lang="es">Bogotá, Colombia</li>
+
+                                                <li>2016</li>
+                                            </ul>
+                                            <div class="info_edu">
+                                                <p lang="en">Bachelor of Mechatronic Engineer</p>
+                                                <p lang="es">Ingeniería en Mecatrónica</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back info_edu">
+                                            <p lang="en">Graduation project: Access control system</p>
+                                            <p lang="es">Proyecto de graduación: Systema de control de accesos</p>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="slide" id="slide2">
+                        <div class="row align-items-top">
+                            <div class="col-12 text-center">
+                                <div class="container_title" id="title_edu">
+                                    <div class="document">
+                                        <h1 lang="en">Education</h1>
+                                        <h1 lang="es">Estudios</h1>
+                                        <hr class="brace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-top">
+                            <div class="col-xs-12 col-sm offset-md-1 text-center">
+                                <div class="edu_img">
+                                    <a href="https://www.laguardia.edu/" target="_blank"><img src="img/lagcc.png"></a>
+                                </div>                               
+                            </div>
+                            <div class="col-xs-12 col-sm offset-1 offset-xs-0 text-center">
+                                <div class="wrapper">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <ul id="ul">
+                                                <li>Long Island City, NY</li>
+        
+                                                <li lang="en">Spring 2021</li>
+                                                <li lang="es">Primavera 2021</li>
+                                            </ul>
+                                            <div class="info_edu">
+                                                <p lang="en" id="AS_big">Associate in Science, Computer Science</p>
+                                                <p lang="en" id="AS_small">A.S., Computer Science</p>
+                                                <p lang="es">Ciencias de la computación</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back info_edu">
+                                            <p lang="en">Current GPA: 3.857/4.00</p>
+                                            <p lang="es">Promedio actual: 3.857/4.00</p>
+
+                                            <p lang="en">Dean’s List: Spring 2019</p>
+                                            <p lang="es">Dean’s List: Primavera 2019</p>
+                                        </div>
+                                    </div>
+                                </div>                               
                             </div>
                         </div>
                     </div>
@@ -301,7 +381,8 @@
                                         <hr>
                                     </div>
                                     <div class = "items element">
-                                        <p class="elem">Resume</p>
+                                        <p class="elem" lang="en">Download</p>
+                                        <p class="elem" lang="es">Descargar</p>
                                     </div>
                                 </div>
                             </div>
@@ -376,13 +457,14 @@
 
         <!-- JavaScript -->
         <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <!-- Popper.js -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Fullpage -->
         <script type="text/javascript" src="./js/fullpage.js"></script>
+        <script type="text/javascript" src="./js/jquery.fullpage.extensions.min.js"></script>
         <script type="text/javascript">
 			$(document).ready(function() {
 				$('#FullPage').fullpage({
@@ -446,7 +528,9 @@
 						menu: '#menu',
 						scrollingSpeed: 700,
 						slidesNavigation: true,
-						css3: true
+                        css3: true,
+                        dragAndMove: true,
+                        slidesNavigation: true
 					});
 			});
         </script>
