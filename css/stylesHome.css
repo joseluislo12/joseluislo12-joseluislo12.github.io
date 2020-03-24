@@ -609,7 +609,7 @@
 /* Mobile S, M */
 @media screen and (max-width: 375px){
     .title_edu{
-        top: 10%;
+        top: -50;
     }
     .edu_img img{
         max-width: 30%;
