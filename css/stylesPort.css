@@ -80,7 +80,7 @@
     transition-delay: 0.3s;
     opacity: 1;
 }
-/* Responsive */
+/* Smart Devices Info */
 .contact_img{
     display: none;
     width: 90%;
@@ -108,25 +108,31 @@
 #col_contact_img{
     margin-bottom: 20%;
 }
-@media screen and (max-width: 600px){
+
+/* Mobile S, M, L*/
+@media screen and (max-width: 425px){
+    #title_port {
+        top: 15%;
+        font-size: 0.7em;
+    }
     .container_card {
         display: none;
     }
     .contact_img{
         display: block;
     }
-    #col_contact_img{
-        margin-bottom: 20%;
-    }
-    #gif{
-        margin-bottom: 20%;
-    }
 }
-@media screen and (max-width: 767px) and (min-width: 601px){
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 426px){
+    #title_port {
+        top: 40%;
+        font-size: 0.7em;
+    }
     .container_card {
-        width: 150px;
-        height: 150px;
-        top: 0px;
+        width: 110px;
+        height: 110px;
+        top: -10px;
+        left: 10%;
     }
     .head {
         font-size: 20px;
@@ -134,82 +140,100 @@
     .element {
         font-size: 12px;
     }
-    #gif{
-        margin-top: 10%;
-        margin-bottom: 15%;
-    }
-}
-@media screen and (max-width: 1000px) and (min-width: 768px){
-    .container_card {
-        width: 150px;
-        height: 150px;
-        top: 0px;
-    }
-    .head {
-        font-size: 20px;
-    }
-    .element {
-        font-size: 12px;
+    .contact_img{
+        display: none;
     }
     #gif{
         margin-top: 20%;
-        margin-bottom: 0%;
+        margin-left: -20%;
+    }
+    #gif img{
+        max-height: 400px;
     }
 }
-@media screen and (max-width: 1150px) and (min-width: 1001px){
+/* Laptop */
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    #title_port {
+        top: 40%;
+        font-size: 1em;
+    }
     .container_card {
-        width: 200px;
-        height: 200px;
-        top: 0px;
+        width: 160px;
+        height: 160px;
+        top: -10px;
+        left: 10%;
     }
     .head {
-        font-size: 30px;
+        font-size: 20px;
     }
     .element {
-        font-size: 17px;
+        font-size: 12px;
+    }
+    .contact_img{
+        display: none;
     }
     #gif{
-        margin-top: 15%;
-        margin-bottom: 0%;
+        margin-top: 20%;
+        margin-left: -20%;
+    }
+    #gif img{
+        max-height: 600px;
     }
 }
-@media screen and (min-width: 1151px){
+/* Laptop L*/
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+    #title_port {
+        top: 40%;
+        font-size: 2em;
+    }
     .container_card {
         width: 250px;
         height: 250px;
-        top: 0px;
+        top: -10px;
+        left: 10%;
     }
     .head {
-        font-size: 30px;
+        font-size: 35px;
     }
     .element {
-        font-size: 17px;
+        font-size: 20px;
+    }
+    .contact_img{
+        display: none;
     }
     #gif{
-        margin-top: 15%;
-        margin-bottom: 0%;
+        margin-top: 20%;
+        margin-left: -20%;
+    }
+    #gif img{
+        height: 700px;
     }
 }
-
-/* Title */
-/* Responsive */
-@media screen and (max-width: 600px){
-    #title_contact {
-        top: 5%;
+/* 4K */
+@media screen and (min-width: 1441px){
+    #title_port {
+        top: 40%;
+        font-size: 3em;
     }
-}
-@media screen and (max-width: 767px) and (min-width: 601px){
-    #title_contact {
-        top: 10%;
+    .container_card {
+        width: 300px;
+        height: 300px;
+        left: 10%;
     }
-}
-@media screen and (max-width: 1000px) and (min-width: 768px){
-    #title_contact {
-        top: 10%;
+    .head {
+        font-size: 45px;
     }
-}
-@media screen and (min-width: 1001px){
-    #title_contact {
-        top: 0%;
+    .element {
+        font-size: 30px;
+    }
+    .contact_img{
+        display: none;
+    }
+    #gif{
+        margin-top: 20%;
+        margin-left: -20%;
+    }
+    #gif img{
+        height: 1200px;
     }
 }
