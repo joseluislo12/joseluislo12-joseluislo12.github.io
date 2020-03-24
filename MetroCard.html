@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--Recommended Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="language" content="english"> 
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="author" content="Jose Lobo">
+        <meta name="designer" content="Jose Lobo">
+        <meta name="publisher" content="Jose Lobo">
+
+        <!--Search Engine Optimization Meta Tags-->
+        <title>Jose Lobo | MetroCard App</title>
+        <meta name="description" content="Jose Lobo's portfolio. MetroCard app">
+        <meta name="keywords" content="metrocard,mta,app,android">
+        <meta name="robots" content="index,follow">
+        <meta name="revisit-after" content="7 days">
+        <meta name="distribution" content="web">
+        <meta name="robots" content="noodp">
+        <link rel="shortcut icon" href="./img/favicon.ico" />
+        
+        <!--Optional Meta Tags-->
+        <meta name="distribution" content="web">
+        <meta name="web_author" content="Jose Lobo">
+        <meta name="rating" content="general">
+        <meta name="rating" content="safe for kids">
+        <meta name="subject" content="Personal">
+        <meta name="title" content="Jose Lobo | MetroCard App">
+        <meta name="copyright" content="Copyright 2020">
+        <meta name="reply-to" content="j.lobolara@gmail.com">
+        <meta name="abstract" content="Jose Lobo is a Mechatronic Engineer, A.S. Computer Science student.">
+        <meta name="city" content="New York City">
+        <meta name="country" content="USA">
+        <meta name="distribution" content="global">
+        <meta name="classification" content="Jose Lobo is a Mechatronic Engineer, A.S. Computer Science student.">
+    
+        <!--Meta Tags for HTML pages on Mobile-->
+        <meta name="format-detection" content="telephone=yes"/>
+        <meta name="HandheldFriendly" content="true"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!--http-equiv Tags-->
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+        <!-- CSS -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!-- FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- Styles -->
+        <link href='./css/styles.css' rel='stylesheet'>
+        <link href='./css/stylesPort.css' rel='stylesheet'>
+	</head>
+	<body>
+        <header id="header" class="header">
+            <h2 class="logo">
+                <a href="#home"><mark>Jose Lobo</mark></a>
+            </h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="menu" id="menu">
+                <a href="#about" lang="en" id="abme_en">About me</a>
+                <a href="#about" lang="es" id="abme_es">Acerca de mí</a>
+
+                <a href="#skills" lang="en" id="sk_en">Skills</a>
+                <a href="#skills" lang="es" id="sk_es">Herramientas</a>
+                
+                <a href="#portfolio" lang="en" id="prtf_en">Portfolio</a>
+                <a href="#portfolio" lang="es" id="prtf_es">Portafolio</a>
+                
+                <a href="#education" lang="en" id="edu_en">Education</a>
+                <a href="#education" lang="es" id="edu_es">Estudios</a>
+                
+                <a href="#contact" lang="en" id="cnt_en">Contact</a>
+                <a href="#contact" lang="es" id="cnt_es">Contacto</a>
+                
+                <a href="#" lang="en" id="btn-es">EN</a>
+                <a href="#" lang="es" id="btn-en">ES</a>
+
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </header>
+        
+        <!-- CONTENT -->
+		<div class="main">
+            <div class="row align-items-center">
+                <div class="col-xs-10 offset-xs-0 col-md-5 offset-md-1 text-center">
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_contact">
+                                <div class="document">
+                                    <h1>MetroCard App</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/github.png&quot);">
+                                <div class="overlay" onclick="gotoPort(1,1)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p>Github</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem">MetroCard</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-5 offset-1">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/download.png&quot);">
+                                <div class="overlay" onclick="gotoPort(1,2)">
+                                    <div class = "items"></div>
+                                    <div class = "items head">
+                                        <p>Apk</p>
+                                        <hr>
+                                    </div>
+                                    <div class = "items element">
+                                        <p class="elem" lang="en">Download</p>
+                                        <p class="elem" lang="es">Descargar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row alling-items-center" style="display: none;">
+                        <div class="col-12 text-center" id="col_contact_img">
+                            <div class="contact_img" style="background-color: #333;" onclick="gotoPort(1,1)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fab fa-github-square fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p>Github: MetroCard</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_img" style="background-color: rgba(122, 129, 16, 0.801);" onclick="gotoPort(1,2)">
+                                <div class="row">
+                                    <div class="col-2 text-right offset-2">
+                                        <i class="fas fa-download fa-2x"></i>
+                                    </div>
+                                    <div class="col-6 offset-1 text-left">
+                                        <p lang="en">Apk (download)</p>
+                                        <p lang="es">Apk (descargar)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-10 offset-xs-0 col-md-5 offset-lg-1 text-center">
+                    <div id="gif">
+                        <img src="./img/portf/MetroCard App.gif" alt="MetroCard App gif" style="border: solid #333;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SCROLL TO TOP -->
+        <a href="#home" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        
+        <!-- FOOTER -->
+		<footer id="Footer">
+			<div class="container">
+				<div class="row align-items-center no-gutters justify-content-center">
+					<div id="Copyright">
+						<span>
+                            <h6>Copyright &copy; 2020 | Jose Lobo</h6>
+						</span>
+					</div>
+				</div>
+			</div>
+        </footer>
+
+        <!-- JavaScript -->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Personal -->
+        <script type="text/javascript" src="./js/portfolio.js"></script>
+    </body>
+</html>

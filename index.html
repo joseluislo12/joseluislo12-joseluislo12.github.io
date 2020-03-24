@@ -52,8 +52,11 @@
         <link href='./css/fullpage.css' rel='stylesheet'>
         <!-- FontAwesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="./css/magnific-popup.css">
         <!-- Styles -->
         <link href='./css/styles.css' rel='stylesheet'>
+        <link href='./css/stylesHome.css' rel='stylesheet'>
 	</head>
 	<body>
         <header id="header" class="header">
@@ -101,8 +104,6 @@
                         </div>
                     </div>
 
-                    <br>
-                    
                     <div class="row align-items-center text-right">
                         <div class="col-xs-1 offset-sm-2 offset-lg-5">
                             <div class="content">
@@ -152,8 +153,6 @@
                         </div>
                     </div>
 
-                    <br><br>
-                    
                     <div class="row align-items-center text-right">
                         <div class="col-xs-2 offset-3 offset-md-7 offset-lg-8">
                             <button lang="en" style="--content: 'Portfolio';" class="btn-prtf">
@@ -173,7 +172,7 @@
 				<!-- ABOUT ME -->
 				<div class="section" id="section1">
                     <div class="row align-items-top">
-                        <div class="col-12 text-center">
+                        <div class="col-xs-5 offset-xs-0 col-10 offset-1 text-center">
                             <div class="container_title" id="title_about">
                                 <div class="document">
                                     <h1 lang="en">About Me</h1>
@@ -181,6 +180,47 @@
                                     <hr class="brace">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-sm-10 col-md-5 offset-1 text-center">
+                            <div lang="en">
+                                <p class="text-justify">
+                                    I am an Engineer in Mechatronics and a current student of Computer Science.
+                                </p>
+                                <hr>
+                                <p class="text-justify">
+                                    I have 5+ years of experience in programming microcontrollers for use in electronics projects and 2+ years of back-end web programming experience. I have also designed web pages using the Wordpress platform.
+                                </p>
+                                <hr>
+                                <p class="text-justify">
+                                    I have experience designing and managing databases for implementation in desktop applications or web applications, as well as in the design of applications for Android mobile devices.
+                                </p>
+                                <hr>
+                                <p class="text-justify">
+                                    Throughout my career, I have characterized myself as a self-taught person, with leadership skills and adaptation to different environments. I have a proactive attitude, great responsibility, and effectiveness, as well as being used to teamwork.
+                                </p>
+                            </div>
+
+                            <div lang="es">
+                                <p class="text-justify">
+                                    Soy Ingeniero en Mecatrónica y actual estudiante de Ciencias de la Computación.
+                                </p>
+                                <p class="text-justify">
+                                    Cuento con 5+ años de experiencia en la programación de microcontroladores para su uso en proyectos de electrónica y 2+ años de experiencia en programación web Back-End. También he diseñado páginas web utilizando la plataforma Wordpress.
+                                </p>
+                                <p class="text-justify">
+                                    Tengo experiencia diseñando y administrando base de datos para su implementación en aplicaciones de escritorio o aplicaciones web, así como en el diseño de aplicaciones para dispositivos móviles Android.
+                                </p>
+                                <p class="text-justify">
+                                    A lo largo de mi trayectoria me he caracterizado por ser una persona autodidácta, con capacidad de liderazgo y adaptación a diferentes entornos. Cuento con una actitud proactiva, gran responsabilidad y efectividad, así como estar acostumbrado al trabajo en equipo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-10 col-md-4 offset-1 text-center">
+                            <img src="./img/me.jpg" alt="About me picture">
                         </div>
                     </div>
                 </div>
@@ -198,6 +238,110 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="containter_skills">
+                        <div class="row align-items-center skills-section">
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fab fa-html5 fa-5x" style="color: rgb(228, 77, 38)"></i>
+                                    <h3>HTML, CCS, JS, PHP</h3>
+                                    <hr>
+                                    <p lang="en">Development of web sites and applications</p>
+                                    <p lang="es">Desarrollo de páginas y aplicaciones web</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fab fa-wordpress fa-5x" style="color: rgb(0, 116, 156)"></i>
+                                    <h3>Wordpress</h3>
+                                    <hr>
+                                    <p lang="en">Development of websites using Wordpress</p>
+                                    <p lang="es">Desarrollo de páginas web utilizando Wordpress</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-code fa-5x" style="color: rgb(130, 228, 38)"></i>
+                                    <h3>Java, C++, C#, Python</h3>
+                                    <hr>
+                                    <p lang="en">Desktop application development.</p>
+                                    <p lang="es">Desarrollo de aplicaciones de escritorio.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-mobile-alt fa-5x" style="color: rgb(38, 228, 212)"></i>
+                                    <h3>Android Studio</h3>
+                                    <hr>
+                                    <p lang="en">Android mobile application development.</p>
+                                    <p lang="es">Desarrollo de aplicaciones móviles Android.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-database fa-5x" style="color: rgb(228, 209, 38)"></i>
+                                    <h3>MySQL, SQL Server</h3>
+                                    <hr>
+                                    <p lang="en">Design and administration of databases.</p>
+                                    <p lang="es">Diseño y administración de bases de datos.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-memory fa-5x" style="color: rgb(228, 38, 218)"></i>
+                                    <h3>Eagle CAD, Proteus ISIS-ARES</h3>
+                                    <hr>
+                                    <p lang="en">Simple and double layer electronic circuit design.</p>
+                                    <p lang="es">Diseño de circuitos electrónicos sencillos y doble capa.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-microchip fa-5x" style="color: rgb(57, 38, 228)"></i>
+                                    <h3>Arduino IDE, PIC C, Mplab</h3>
+                                    <hr>
+                                    <p lang="en">Programming of microcontrollers for its implementation in electronics projects.</p>
+                                    <p lang="es">Programación de microcontroladores para su implementación en proyectos de electrónica.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fab fa-windows fa-5x" style="color: rgb(243, 79, 28)"></i>
+                                    <h3>Word, Excel, PowerPoint</h3>
+                                    <hr>
+                                    <p lang="en">Microsoft Office.<br>Visual Basic programming for applications in Excel.</p>
+                                    <p lang="es">Microsoft Office.<br>Programación en Visual Basic para aplicaciones en Excel.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-file-code fa-5x" style="color: rgb(243, 28, 28)"></i>
+                                    <h3>Labview, Matlab, Unity, Visual Studio</h3>
+                                    <hr>
+                                    <p lang="en">Programming for general applications.</p>
+                                    <p lang="es">Programación para aplicaciones generales.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10 offset-sm-1 col-md-4">
+                                <div class="skills-detail">
+                                    <i class="fas fa-cogs fa-5x" style="color: rgb(28, 243, 125)"></i>
+                                    <h3>IT Support</h3>
+                                    <hr>
+                                    <p lang="en">Hardware support for computers, printers, projectors, etc.</p>
+                                    <p lang="es">Soporte de hadware para computadores, impresoras, proyectores, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 				
 				<!-- PORTFOLIO -->
@@ -209,6 +353,75 @@
                                     <h1 lang="en">Portfolio</h1>
                                     <h1 lang="es">Portafolio</h1>
                                     <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center btns-filter">
+                            <button class="btn btn-default filter-button btn_filter_active" data-filter="all" onclick="filter(0)" id="btn_all">
+                                <p lang="en">All (3)</p>
+                                <p lang="es">Todo (3)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="web_site" onclick="filter(1)" id="btn_f1">
+                                <p lang="en">Websites (1)</p>
+                                <p lang="es">Páginas Web (1)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="web_app" onclick="filter(2)" id="btn_f2">
+                                <p lang="en">Web App (1)</p>
+                                <p lang="es">Aplicaciones Web (1)</p>
+                            </button>
+                            
+                                <button class="btn btn-default filter-button" data-filter="mobile_app" onclick="filter(3)" id="btn_f3">
+                                <p lang="en">Mobile App (1)</p>
+                                <p lang="es">Aplicaciones móviles (1)</p>
+                            </button>
+                            <!--<button class="btn btn-default filter-button" data-filter="desktop_app" onclick="filter(4)" id="btn_f4">
+                                <p lang="en">Desktop App (0)</p>
+                                <p lang="es">Aplicaciones de Escritorio (0)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="others" onclick="filter(5)" id="btn_f5">
+                                <p lang="en">Others (0)</p>
+                                <p lang="es">Otros (0)</p>
+                            </button>
+                        -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-inner">
+                        <div class="row align-items-center">
+                            <div class="col-xs-9 offset-xs-1 col-sm-10 offset-sm-1 col-md-3 offset-md-1 text-center mix filter web_site">
+                                <div class="gallery_product" lang="en">
+                                    <a href="./img/portf/karjos.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;https://karjos.com.co&apos; &gt;Karjos SAS		|		Go to&lt;/a&gt;">
+                                        <img src="./img/portf/karjos.png" alt="Karjos SAS website">
+                                    </a>
+                                </div>
+                                <div class="gallery_product" lang="es">
+                                    <a href="./img/portf/karjos.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;https://karjos.com.co&apos;&gt;Karjos SAS		|		Ir a&lt;/a&gt;">
+                                        <img src="./img/portf/karjos.png" alt="Karjos SAS pagina web">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-9 offset-xs-1 col-sm-10 offset-sm-1 col-md-3 offset-md-0 text-center mix filter web_app">
+                                <div class="gallery_product">
+                                    <a href="./img/portf/karjos_app.png" class="portfolio-popup" title="Karjos SAS">
+                                        <img src="./img/portf/karjos_app.png" alt="Karjos SAS System">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-9 offset-xs-1 col-sm-10 offset-sm-1 col-md-3 offset-md-0 text-center mix filter mobile_app">
+                                <div class="gallery_product" lang="en">
+                                    <a href="./img/portf/metrocard.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;./MetroCard.html&apos; &gt;MetroCard App		|		Go to&lt;/a&gt;">
+                                        <img src="./img/portf/metrocard.png" alt="MetroCard App">
+                                    </a>
+                                </div>
+                                <div class="gallery_product" lang="es">
+                                    <a href="./img/portf/metrocard.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;./MetroCard.html&apos;&gt;MetroCard App		|		Ir a&lt;/a&gt;">
+                                        <img src="./img/portf/metrocard.png" alt="MetroCard App">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -231,12 +444,12 @@
                         </div>
 
                         <div class="row align-items-top">
-                            <div class="col-xs-12 col-sm offset-md-1 text-center">
+                            <div class="col-sm-10 col-md-5 text-center">
                                 <div class="edu_img">
-                                    <a href="https://www.umng.edu.co/" target="_blank"><img src="img/umng.png"></a>
+                                    <a href="https://www.umng.edu.co/" target="_blank"><img src="img/edu/umng.png" alt="UMNG logo"></a>
                                 </div>                               
                             </div>
-                            <div class="col-xs-12 col-sm offset-1 offset-xs-0 text-center">
+                            <div class="col-sm-10 col-md-5 offset-sm-1 text-center">
                                 <div class="wrapper">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
@@ -252,8 +465,8 @@
                                             </div>
                                         </div>
                                         <div class="flip-card-back info_edu">
-                                            <p lang="en">Graduation project: Access control system</p>
-                                            <p lang="es">Proyecto de graduación: Systema de control de accesos</p>
+                                            <p lang="en">Graduation project: <br>Access control system</p>
+                                            <p lang="es">Proyecto de graduación: <br>Sistema de control de accesos</p>
                                         </div>
                                     </div>
                                 </div>                              
@@ -277,7 +490,7 @@
                         <div class="row align-items-top">
                             <div class="col-xs-12 col-sm offset-md-1 text-center">
                                 <div class="edu_img">
-                                    <a href="https://www.laguardia.edu/" target="_blank"><img src="img/lagcc.png"></a>
+                                    <a href="https://www.laguardia.edu/" target="_blank"><img src="img/edu/lagcc.png" alt="LAG CC Logo"></a>
                                 </div>                               
                             </div>
                             <div class="col-xs-12 col-sm offset-1 offset-xs-0 text-center">
@@ -292,16 +505,13 @@
                                             </ul>
                                             <div class="info_edu">
                                                 <p lang="en" id="AS_big">Associate in Science, Computer Science</p>
-                                                <p lang="en" id="AS_small">A.S., Computer Science</p>
+                                                <p lang="en" id="AS_small" style="display: none;">A.S., Computer Science</p>
                                                 <p lang="es">Ciencias de la computación</p>
                                             </div>
                                         </div>
                                         <div class="flip-card-back info_edu">
-                                            <p lang="en">Current GPA: 3.857/4.00</p>
-                                            <p lang="es">Promedio actual: 3.857/4.00</p>
-
-                                            <p lang="en">Dean’s List: Spring 2019</p>
-                                            <p lang="es">Dean’s List: Primavera 2019</p>
+                                            <p lang="en">Current GPA: 3.857/4.00 <br> Dean’s List: Spring 2019</p>
+                                            <p lang="es">Promedio actual: 3.857/4.00 <br> Dean’s List: Primavera 2019</p>
                                         </div>
                                     </div>
                                 </div>                               
@@ -326,7 +536,7 @@
                     
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                            <div class="container_card" style="background-image: url(&quot./img/email.png&quot);">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/email.png&quot);">
                                 <div class="overlay" onclick="gotoPage(1)">
                                     <div class = "items"></div>
                                     <div class = "items head">
@@ -342,7 +552,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <div class="container_card" style="background-image: url(&quot./img/linkedin.png&quot);">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/linkedin.png&quot);">
                                 <div class="overlay" onclick="gotoPage(2)">
                                     <div class = "items"></div>
                                     <div class = "items head">
@@ -357,7 +567,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <div class="container_card" style="background-image: url(&quot./img/github.png&quot);">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/github.png&quot);">
                                 <div class="overlay" onclick="gotoPage(3)">
                                     <div class = "items"></div>
                                     <div class = "items head">
@@ -372,7 +582,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <div class="container_card" style="background-image: url(&quot./img/download.png&quot);">
+                            <div class="container_card" style="background-image: url(&quot./img/contact/download.png&quot);">
                                 <div class="overlay" onclick="gotoPage(4)">
                                     <div class = "items"></div>
                                     <div class = "items head">
@@ -463,6 +673,7 @@
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Fullpage -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
         <script type="text/javascript" src="./js/fullpage.js"></script>
         <script type="text/javascript" src="./js/jquery.fullpage.extensions.min.js"></script>
         <script type="text/javascript">
@@ -526,14 +737,16 @@
 						lockAnchors: false,
 						anchors: ['home', 'about', 'skills', 'portfolio', 'education', 'contact'],
 						menu: '#menu',
-						scrollingSpeed: 700,
+						scrollingSpeed: 1000,
 						slidesNavigation: true,
                         css3: true,
                         dragAndMove: true,
-                        slidesNavigation: true
+                        autoScrolling: false
 					});
 			});
         </script>
+        <!-- Magnific Popup core JS file -->
+        <script src="./js/jquery.magnific-popup.js"></script>
         <!-- Personal -->
         <script type="text/javascript" src="./js/scripts.js"></script>
     </body>
