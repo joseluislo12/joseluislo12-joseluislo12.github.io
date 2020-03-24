@@ -673,8 +673,7 @@
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Fullpage -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
-        <script type="text/javascript" src="./js/fullpage.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js" integrity="sha256-XqE8SZB9GifYkLZn4NA6LNdYt47dbn2YyZt3zAk0K3c=" crossorigin="anonymous"></script><script type="text/javascript" src="./js/fullpage.js"></script>
         <script type="text/javascript" src="./js/jquery.fullpage.extensions.min.js"></script>
         <script type="text/javascript">
 			$(document).ready(function() {
@@ -741,7 +740,8 @@
 						slidesNavigation: true,
                         css3: true,
                         dragAndMove: true,
-                        autoScrolling: false
+                        /*autoScrolling: false*/
+                        scrollOverflow: true
 					});
 			});
         </script>
