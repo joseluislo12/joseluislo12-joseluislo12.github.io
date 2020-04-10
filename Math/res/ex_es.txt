@@ -1,0 +1,105 @@
+1@En x + 2 = 6, x es la variable.
+2@En este ejemplo: 8 ^ 2 = 8 × 8 = 64 (El exponente "2" dice que use el 8 dos veces en una multiplicación).
+3@En 8 ^ 2, 8 es la base, y el resultado es 8 × 8 = 64
+4@En este ejemplo, el pequeño "2" dice que use 8 dos veces en una multiplicación: 8 ^ 2 = 8 × 8 = 64
+5@y = 2x + 5
+6@En "x + 5 = 9", 5 y 9 son constantes.
+7@6z significa 6 veces z, y "z" es una variable, entonces 6 es un coeficiente. En ax ^ 2 + bx + c, "x" es una variable, y "a" y "b" son coeficientes.
+8@En "4x - 7 = 5" existen 3 términos: 4x, 7 y 5
+9@56 * 4 + 6
+10@El área de un cuadrado es ancho * largo
+11@El perímetro de un cuadrado es 2 * ancho + 2 * largo
+12@5 × (3 + 4) - 2 × 8 = 5 × 7 - 2 × 8 = 35 - 16 = 19
+13@5 × (3 + 4) - 2 × 8 = 5 × 7 - 2 × 8 = 35 - 16 = 19
+14@1 dólar es equivalente a 100 centavos. 120 segundos equivalen a 2 minutos
+15@7x + 2 = 10 - 1x
+16@3x + 6y - 4xy - 4y + 10yx + 5x = (3x + 5x) + (-4xy + 10yx) + (6y-4y) = 8x + 6xy + 2y
+17@5xy ^ 2 - 3x + 5y ^ 3 - 3
+18@3x ^ 2 - 3y ^ 2 + 2
+19@3x ^ 2 + 2
+20@3x ^ 2
+21@6 (5 - 2) = (6 * 5) - (6 * 2)
+22@5 + 3 = 3 + 5
+23@a + (b + c) = (a + b) + c = (a + c) + b
+24@5 + 0 = 5 | 5 * 1 = 5
+25@5 * 0 = 0
+26@5 * -1 = -5 | -5 * -1 = 5
+27@2/10 se puede simplificar a 1/5 dividiendo tanto la parte superior como la inferior por 2 (y eso es todo lo que podemos llegar)
+28@Evalúe x ^ 2 + 5 cuando x = 3: 3 ^ 2 + 5 = 9 + 5 = 14
+29@x + 2 = 7 | Cuando ponemos 5 en lugar de x obtenemos: 5 + 2 = 7 | 5 + 2 = 7 es verdadero, entonces x = 5 es una solución.
+30@x + 2 = 7 -> x + 2 - 2 = 7 - 2 -> x = 5
+31@4 × 4 = 16, entonces una raíz cuadrada de 16 es 4.
+32@Comience con 7, luego agregue 3 obtenemos 10, ahora resta 3 y volvemos a 7. Comience con 6, multiplique por 2 obtenemos 12, ahora divida entre 2 y regresemos a 6.
+33@5 = 5 -> 5 + 3 = 5 + 3 -> 8 = 8
+34@4 = 4 -> 4 * 3 = 4 * 3 -> 12 = 12
+35@a ≠ b dice que a no es igual a b | a <b dice que a es menor que b | a> b dice que a es mayor que b
+36@x ^ 2 - 9 = 0 -> Conjunto de soluciones: {−3, 3}
+37@x + 3 = 5 | x = 2 es una solución (verdadero) | x = 5 es una solución (falso)
+38@9> 6 -> 9 + 4> 6 ​​+ 4 -> 13> 10 | 9> 6 -> 9 * 2> 6 * 2 -> 18> 12 | 9> 6 -> 9 * -1> 6 * -1 -> -9 <-6
+39@x> -6 Y x <3 | x <12 O x> 8
+40@Fútbol = {alex, hunter, casey, drew} | Tenis = {casey, drew, jade} | Fútbol ∪ Tenis = {alex, hunter, casey, drew, jade}
+41@Fútbol = {alex, hunter, casey, drew} | Tenis = {casey, drew, jade} | Fútbol ∩ Tenis = {casey, drew}
+42@{1,2,3,4} es el conjunto de números de conteo menores de 5
+43@{x | x> 0} -> Dice "el conjunto de todas las x, de modo que x es mayor que 0"
+44@Desigualdad: 3 <x <9 | Intervalo: (3,9)
+45@f (x) = x / 2 ("f de x es igual a x dividido por 2"). Es una función porque cada entrada "x" tiene una sola salida "x / 2": f (2) = 1 | f (16) = 8 | f (−10) = −5
+46@El punto (12,5) tiene 12 unidades y 5 unidades arriba.
+47@~
+48@Cuando la función f (x) = x ^ 2 recibe los valores x = {1,2,3, ...} entonces el dominio es simplemente esos valores {1,2,3, ...}
+49@Cuando la función f (x) = x ^ 2 recibe los valores x = {1,2,3, ...} entonces el rango es {1,4,9, ...}
+50@El mínimo de {14, 4, 16, 12} es 4. | El máximo de {14, 4, 16, 12} es 16.
+51@~
+52@−2 y 2 son los ceros de la función x ^ 2 - 4
+53@~
+54@~
+55@~
+56@~
+57@~
+58@~
+59@d = r * t -> d: distancia r: tasa t: tiempo
+60@~
+61@Let x = La edad actual de Daniel.
+62@x - 2 = 5 -> x es el valor desconocido
+63@x - 2 = 5 | x = 7 es una solución -> 7 - 2 = 5 -> Verdadero
+64@~
+65@1/3 = 2/6
+66@Puedes pintar 3 tableros en media hora. La tarifa unitaria es de 6 tablas por hora.
+67@¿Qué es x + x / 2 cuando x = 5? -> Pon "5" donde "x" es: 5 + 5/2 = 5 + 2.5 = 7.5
+68@~
+69@~
+70@ax ^ 2 + bx + c = 0
+71@~
+72@~
+73@El punto (12,5) tiene 12 unidades y 5 unidades arriba.
+74@~
+75@
+76@ ~
+77@~
+78@~
+79@~
+80@~
+81@~
+82@~
+83@x - 2> 5 -> x - 2 + 2> 5 + 2 -> Soluciones: x> 7
+84@~
+85@1, 2, 4, 8, 16, 32, 64, 128, 256, ... -> Cada número es 2 veces el número anterior, por lo que la razón común es 2
+86@~
+87@~
+88@
+89@5xy ^ 2 - 3x + 5y ^ 3 - 3
+90@En la ecuación -7x ^ 4 + 2x ^ 3 - 11, el máximo exponente es 4, por lo que el coeficiente principal es -7
+91@
+92@
+93@
+94@~
+95@16 es un cuadrado perfecto porque 4 ^ 2 = 16. 25 también es un cuadrado perfecto porque 5 ^ 2 = 25
+96@x ^ 2 - 36 = 0 -> (x) ^ 2 - (6) ^ 2 = 0 -> (x + 6) (x - 6) = 0
+97@2x ^ 2 + 5x - 3 = 0
+98@~
+99@~
+100@
+101@
+102@
+103@
+104@
+105@

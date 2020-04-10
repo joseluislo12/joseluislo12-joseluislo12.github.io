@@ -1,0 +1,105 @@
+1@A symbol for a number we don't know yet. It is usually a letter like x or y.
+2@The exponent of a number says how many times to use the number in a multiplication.
+3@The number that gets multiplied when using an exponent.
+4@The power (or exponent) of a number says how many times to use the number in a multiplication. It is written as a small number to the right and above the base number.
+5@A symbol or a combination of symbols used in algebra, containing one or more numbers, variables, and arithmetic operations.
+6@A fixed value. In Algebra, a constant is a number on its own, or sometimes a letter such as a, b or c to stand for a fixed number.
+7@A number used to multiply a variable. Variables with no number have a coefficient of 1. Sometimes a letter stands in for the number.
+8@In Algebra a term is either a single number or variable, or numbers and variables multiplied together. Terms are separated by + or − signs, or sometimes by divide.
+9@A numerical expression is a mathematical phrase involving only numbers and one or more operational symbols.
+10@The size of a surface. The amount of space inside the boundary of a flat (2-dimensional) object such as a triangle or circle, or surface of a solid (3-dimensional) object
+11@The distance around a two-dimensional shape.
+12@The rules that say which calculation comes first in an expression. PEMDAS
+13@Parentheses first -> Exponents (ie Powers and Square Roots, etc.) -> Multiplication and Division (left-to-right) -> Addition and Subtraction (left-to-right)
+14@Having the same value.
+15@An equation says that two things are equal. It will have an equals sign "=". That equation says: what is on the left is equal to what is on the right. So an equation is like a statement "this equals that".
+16@Like terms are terms that contain the same variables raised to the same power. ... In an expression, only like terms can be combined. We combine like terms to shorten and simplify algebraic expressions, so we can work with them more easily. To combine like terms, we add the coefficients and keep the variables the same.
+17@A polynomial can have constants (like 4), variables (like x or y) and exponents (like the 2 in y2), that can be combined using addition, subtraction, multiplication and division, but no division by a variable.
+18@A polynomial with three terms.
+19@A polynomial with two terms.
+20@A polynomial with just one term.
+21@Is a very useful property that lets you simplify expressions in which you are multiplying a number by a sum or difference. The property states that the product of a sum or difference is equal to the sum or difference of the products.
+22@Changing the order of the numbers we are adding, does not change the sum.
+23@The order of grouping the numbers does not matter. This law holds for addition and multiplication but it doesn’t hold for subtraction and division.
+24@Zero added to any number is the number itself. The number 1 multiplied times any number gives the number itself.
+25@The product of any number and zero is zero. It doesn't matter what the number is, when you multiply it to zero, you get zero as the answer.
+26@The number -1 multiplied times any number gives the number itself with the opposite sign (positive or negative).
+27@To simplify (or reduce) a fraction means to make it as simple as possible.
+28@To calculate the value of.
+29@A value, or values, we can put in place of a variable (such as x) that makes the equation true.
+30@Using inverse operations to undo addition, subtraction, multiplication, and division to get the variable alone.
+31@Is a value that, when multiplied by itself, gives the number.
+32@The operation that reverses the effect of another operation. Addition and subtraction are inverse operations. Multiplication and division are inverse operations.
+33@If the same amount is added to both sides of an equation, then the equality is still true.
+34@If you multiply both sides of an equation by the same number, the sides remain equal.
+35@An inequality compares two values, showing if one is less than, greater than, or simply not equal to another value.
+36@Is the set of values that satisfy a given set of equations or inequalities.
+37@Is a value indicating the relation of a proposition to truth (true or false)
+38@Adding or Subtracting a Number. Multiplying by a Positive Number. Multiplying by a Negative Number.
+39@Is an equation with two or more inequalities joined together with either "and" or "or".
+40@The set made by combining the elements of two sets. So the union of sets A and B is the set of elements in A, or B, or both. The symbol is a special "U" like this: ∪.
+41@The intersection of two sets has only the elements common to both sets. If an element is in just one set it is not part of the intersection. The symbol is an upside down U like this: ∩.
+42@A collection of "things" (objects or numbers, etc). Each member is called an element of the set. A set has only one of each member (all members are unique).
+43@How to describe a set by saying what properties its members have.
+44@ is a way to describe continuous sets of real numbers by the numbers that bound them.
+45@A special relationship where each input has a single output. It is often written as "f(x)" where x is the input value.
+46@A way to pinpoint where you are on a map or graph by how far along and how far up or down the point is.
+47@The plane containing the "x" axis and "y" axis.
+48@All the values that go into a function.
+49@The set of all output values of a function.
+50@Minimum: The smallest value. Maximum: The largest value.
+51@The point where a line or curve crosses the y-axis of a graph. In other words: find the y value when x equals 0
+52@Where a function equals the value zero (0).
+53@A function is "increasing" when the y-value increases as the x-value increases.
+54@The y-value decreases as the x-value increases.
+55@A Constant Function is a horizontal line
+56@How steep a line is.
+57@A diagram of values, usually shown as lines.
+58@Information (such as numbers and descriptions) arranged in rows and columns.
+59@is an equation where variables represent known values.
+60@To "slide": to move a shape without rotating or flipping it. The shape still looks exactly the same, just in a different place.
+61@Is a short phrase you write to restate what you are being asked to solve in a word problem. You explain what the variable(s) in your algebraic equation will represent.
+62@Unknown value that we want to know.
+63@Determine if a solution is correct.
+64@Divide the change in height by the change in horizontal distance.
+65@Says that two ratios (or fractions) are equal.
+66@How much of something per 1 unit of something else.
+67@Putting values where the letters are.
+68@Two or more equations that share variables.
+69@Is any point that lies on each line in the system.
+70@A general term meaning "written down in the way most commonly accepted"
+71@The equation of a straight line in the form y = mx + b where m is the slope of the line and b is its y-intercept
+72@Are those whose graph is a straight line. A linear function has the following form. y = f(x) = a + bx
+73@A way to pinpoint where you are on a map or graph by how far along and how far up or down the point is.
+74@Where lines cross over (where they have a common point).
+75@
+76@When solving an equation, we are trying to find the number that, when substituted, will make a true sentence.
+77@The method of solving "by substitution" works by solving one of the equations (you choose which one) for one of the variables (you choose which one), and then plugging this back into the other equation, "substituting" for the chosen variable and solving for the other. Then you back-solve for the first variable.
+78@In the elimination method you either add or subtract the equations to get an equation in one variable. When the coefficients of one variable are opposites you add the equations to eliminate a variable and when the coefficients of one variable are equal you subtract the equations to eliminate a variable.
+79@Lines on a plane that never meet. They are always the same distance apart.
+80@Consists of at least two linear inequalities in the same variables. The solution of a linear inequality is the ordered pair that is a solution to all inequalities in the system and the graph of the linear inequality is the graph of all solutions of the system.
+81@A line or border around the outside of a shape. It defines the space or area.
+82@A linear inequality is an inequality which involves a linear function. A linear inequality contains one of the symbols of inequality. It shows the data which is not equal in graph form.
+83@"Solving" an inequality means finding all of its solutions. A "solution'' of an inequality is a number which when substituted for the variable makes the inequality a true statement.
+84@Is a function of the form f(x) = ab<sup>x</sup>
+85@The amount we multiply by each time in a geometric sequence.
+86@Where a value increases in proportion to its current value. Such as always doubling. The general formula is: y(x) = ab<sup>kx</sup>
+87@Process of reducing an amount by a consistent percentage rate over a period of time. It can be expressed by the formula y=a(1-b)x wherein y is the final amount, a is the original amount, b is the decay factor, and x is the amount of time that has passed.
+88@
+89@A polynomial can have constants (like 4), variables (like x or y) and exponents (like the 2 in y<sup>2</sup>), that can be combined using addition, subtraction, multiplication and division, but no division by a variable.
+90@Are the numbers written in front of the variable with the largest exponent.
+91@
+92@
+93@
+94@The greatest number that is a factor of two (or more) other numbers. When we find all the factors of two or more numbers, and some factors are the same ("common"), then the largest of those common factors is the Greatest Common Factor.
+95@A number made by squaring a whole number.
+96@A quadratic equation can be written as the difference of perfect squares when the coefficients, the numbers multiplied by the variables, are perfect squares and the exponent of each term is even.
+97@An equation where the highest exponent of the variable (usually "x") is a square (2). A Quadratic Equation is usually written ax<sup>2</sup> + bx + c = 0
+98@Is a plane curve which is mirror-symmetrical and is approximately U-shaped.
+99@The vertex (where the parabola makes its sharpest turn) is halfway between the focus and directrix.
+100@
+101@
+102@
+103@
+104@
+105@

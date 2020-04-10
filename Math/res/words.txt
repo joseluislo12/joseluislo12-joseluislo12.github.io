@@ -1,0 +1,105 @@
+1.Variable.Variable
+2.Exponent.Exponente
+3.Base.Base
+4.Power.Poder
+5.Algebraic expression.Expresión algebráica
+6.Constant.Constante
+7.Coefficient.Coeficiente
+8.Term.Término
+9.Numeric expression.Expresión numérica
+10.Area.Área
+11.Perimeter.Perímetro
+12.Order of operations.Orden de operaciones
+13.PEMDAS.PEMDAS
+14.Equivalent.Equivalente
+15.Equation.Ecuación
+16.Combining like terms.Combinando términos similares
+17.Polynomial.Polinomio
+18.Trinomial.Trinomio
+19.Binomial.Binomio
+20.Monomial.Monomio
+21.Distributive property over multiplication and division.Propiedad distributiva sobre la multiplicación y la división
+22.Commutative property over addition and subtraction.Propiedad conmutativa sobre la suma y la resta
+23.Associative property over addition and multiplication.Propiedad asociativa sobre la suma y la multiplicación
+24.Identity property of addition and multiplication.Propiedad de identidad de la suma y la multiplicación
+25.Zero property of multiplication.Propiedad cero de la multiplicación
+26.Multiplication property of -1.Propiedad de multiplicación de -1
+27.Simplify.Simplificar
+28.Evaluate.Evaluar
+29.Solution.Solución
+30.Isolate.Aislar
+31.Square Root.Raíz cuadrada
+32.Inverse Operations.Operaciones inversas
+33.Additive Property of Equality.Propiedad aditiva de la igualdad
+34.Multiplicative Property of Equality.Propiedad multiplicativa de la igualdad
+35.Inequality.Desigualdad
+36.Solution Set.Conjunto de soluciones
+37.Truth value.Verdad del valor
+38.Properties of Inequalities.Propiedades de desigualdades
+39.Compound Inequalities.Desigualdades compuestas
+40.Union (or).Unión (o)
+41.Intersection (and).Intersección (y)
+42.Set.Conjunto
+43.Set builder notation.Notacion de conjuntos
+44.Interval notation.Notación de intervalos
+45.Function and function notation.Función y notación de función
+46.Coordinate pair.Par ordenado
+47.Coordinate plane/ cartesian plane.Plano coordenado/plano cartesiano
+48.X-value, domain, input, independent variable.Valor del eje X, dominio, entrada, variable independiente
+49.Y-value, range, output, dependent variable.Valor del eje Y, rango, salida, variable dependiente
+50.Minimum and maximum.Mínimo y máximo
+51.Y-intercept (HOY).Intercepto/intersección en Y
+52.X-intercept, zeroes, roots (VUX).Intercepto/intersección en X, ceros, raices
+53.Increasing/positive part of function.Parte creciente/positiva de la función
+54.Decreasing/negative part of function.Parte decreciente/negativa de la función
+55.Constant (0 avg rate) part of function.Parte de la función constante (tasa promedio 0)
+56.Average rate of change/slope.Tasa promedio de cambio/pendiente
+57.Graph.Gráfica
+58.Table.Tabla
+59.Literal Equation.Ecuación literal
+60.Translate.Traducir
+61.Let statement.Declaracion/"dejar que x sea el # de ninos"
+62.Quantities that you are interested in.Cantidades que nos interesan
+63.Checking.Chequear
+64.Average rate of change/slope formula (m).Tasa de cambio/formula de la pendiente (m)
+65.Proportion.Proporción
+66.Unit rate (1).Unidad de medida (1)
+67.Substitute.Sustituir
+68.System of Equations.Sistema de ecuaciones
+69.Solution of System of Equations.Solución de sistema de ecuaciones
+70.Standard Form.Forma normal
+71.Slope-Intercept Form.Forma pendiente-intercepto
+72.Linear Function.Función lineal
+73.Coordinate Point.Punto coordinado
+74.Intersection.Intersección
+75.Solving a System by INSPECTION.Resolver un sistema por INSPECCIÓN
+76.Solving a System by GRAPHING.Resolver un sistema GRAFICANDO
+77.Solving a System by SUBSTITUTION.Resolver un sistema por SUSTITUCIÓN
+78.Solving a System by ELIMINATION.Resolver un sistema por ELIMINACIÓN
+79.Parallel Lines.Líneas paralelas
+80.System of Inequalities.Sistema de desigualdades
+81.Boundary line.Línea límite
+82.Linear inequality.Desigualdad lineal
+83.Solution of an inequality.Solución de una desigualdad
+84.Exponential function.Función exponencial
+85.Common ratio (rate, fraction, percentage).Tasa común (tasa, fraccion, porcentaje)
+86.Exponential growth.Crecimiento exponencial
+87.Exponential decay.Decrecimiento exponencial
+88.Exponent Laws.Leyes de exponentes/poderes
+89.Polynomial expression (degree/power).Expresión polinómica (grado/poder)
+90.Leading Coefficient/ highest degree.Coeficiente lider/poder mas alto
+91.Factor (noun).Factor (sustantivo)
+92.Factor (verb).Factorizar (verbo)
+93.Factor by grouping process.Factorizar por grupo
+94.Greatest Common Factor.Factor mayor en común
+95.Perfect Squares.Cuadrados perfectos
+96.Difference of Perfect Squares.Diferencia de cuadrados perfectos
+97.Quadratic Function (equation).Función cuadrática (ecuación)
+98.Parabola.Parábola
+99.Turning point (vertex).Punto de retorno (vértice)
+100.Axis of Symmetry (formula).Eje de simetría  (formula)
+101.Maximum/minimum (Range of quadratic).Máximo/mínimo (rango de cuadrática)
+102.Increasing/Decreasing on a domain interval.Crecimiento/decaimiento sobre un intervalo de dominio
+103.Arrows on a function.Flechas en una función
+104.Endpoints on a function.Puntos finales en una función
+105.X-intercept/Zeros/Roots.Intercepto en el eje X/ceros/raíces

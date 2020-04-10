@@ -1,0 +1,105 @@
+1@Un símbolo para un número que aún no conocemos. Suele ser una letra como x o y.
+2@El exponente de un número dice cuántas veces usar el número en una multiplicación.
+3@El número que se multiplica cuando se usa un exponente.
+4@La potencia (o exponente) de un número dice cuántas veces usar el número en una multiplicación. Está escrito como un número pequeño a la derecha y arriba del número base.
+5@Un símbolo o una combinación de símbolos utilizados en álgebra, que contiene uno o más números, variables y operaciones aritméticas.
+6@Un valor fijo. En álgebra, una constante es un número en sí mismo, o, a veces, una letra como a, b o c para representar un número fijo.
+7@Un número usado para multiplicar una variable. Las variables sin número tienen un coeficiente de 1. A veces, una letra representa el número.
+8@En Álgebra, un término es un número único o variable, o números y variables multiplicados juntos. Los términos están separados por signos + o -, o algunas veces por división.
+9@Una expresión numérica es una frase matemática que involucra solo números y uno o más símbolos operativos.
+10@El tamaño de una superficie. La cantidad de espacio dentro del límite de un objeto plano (bidimensional) como un triángulo o círculo, o la superficie de un objeto sólido (tridimensional)
+11@La distancia alrededor de una forma bidimensional.
+12@Las reglas que dicen qué cálculo viene primero en una expresión. PEMDAS
+13@Paréntesis primero -> Exponentes (es decir, potencias y raíces cuadradas, etc.) -> Multiplicación y división (de izquierda a derecha) -> Suma y resta (de izquierda a derecha)
+14@Tener el mismo valor.
+15@Una ecuación dice que dos cosas son iguales. Tendrá un signo igual "=". Esa ecuación dice: lo que está a la izquierda es igual a lo que está a la derecha. Entonces, una ecuación es como una declaración "esto es igual a eso".
+16@Son términos que contienen las mismas variables elevadas a la misma potencia. ... En una expresión, solo se pueden combinar términos similares. Combinamos términos similares para acortar y simplificar expresiones algebraicas, para que podamos trabajar con ellas más fácilmente. Para combinar términos similares, agregamos los coeficientes y mantenemos las variables iguales.
+17@Un polinomio puede tener constantes (como 4), variables (como x o y) y exponentes (como el 2 en y2), que se pueden combinar mediante la suma, la resta, la multiplicación y la división, pero no la división por una variable.
+18@Un polinomio con tres términos.
+19@Un polinomio con dos términos.
+20@Un polinomio con solo un término.
+21@es una propiedad muy útil que le permite simplificar expresiones en las que está multiplicando un número por una suma o diferencia. La propiedad establece que el producto de una suma o diferencia es igual a la suma o diferencia de los productos.
+22@Cambiar el orden de los números que estamos sumando, no cambia la suma.
+23@El orden de agrupación de los números no importa. Esta ley es válida para la suma y la multiplicación, pero no para la resta y la división.
+24@Zero agregado a cualquier número es el número mismo. El número 1 multiplicado por cualquier número da el número mismo.
+25@El producto de cualquier número y cero es cero. No importa cuál sea el número, cuando lo multiplica a cero, obtiene cero como respuesta.
+26@El número -1 multiplicado por cualquier número da el número mismo con el signo opuesto (positivo o negativo).
+27@Simplificar (o reducir) una fracción significa hacerlo lo más simple posible.
+28@Para calcular el valor de.
+29@Un valor, o valores, podemos colocar en lugar de una variable (como x) que hace que la ecuación sea verdadera.
+30@Uso de operaciones inversas para deshacer sumas, restas, multiplicaciones y divisiones para obtener solo la variable.
+31@Es un valor que, cuando se multiplica por sí mismo, da el número.
+32@La operación que invierte el efecto de otra operación. La suma y la resta son operaciones inversas. La multiplicación y la división son operaciones inversas.
+33@Si se agrega la misma cantidad a ambos lados de una ecuación, entonces la igualdad sigue siendo cierta.
+34@Si multiplica ambos lados de una ecuación por el mismo número, los lados permanecerán iguales.
+35@Una desigualdad compara dos valores, mostrando si uno es menor, mayor o simplemente no es igual a otro valor.
+36@Es el conjunto de valores que satisfacen un conjunto dado de ecuaciones o desigualdades.
+37@Es un valor que indica la relación de una proposición con la verdad (verdadero o falso)
+38@Sumar o restar un número. Multiplicar por un número positivo. Multiplicar por un número negativo.
+39@Es una ecuación con dos o más desigualdades unidas con "y" o "o".
+40@El conjunto realizado combinando los elementos de dos conjuntos. Entonces, la unión de los conjuntos A y B es el conjunto de elementos en A, B o ambos. El símbolo es una "U" especial como esta: ∪.
+41@La intersección de dos conjuntos tiene solo los elementos comunes a ambos conjuntos. Si un elemento está en un solo conjunto, no es parte de la intersección. El símbolo es una U invertida como esta: ∩.
+42@Una colección de "cosas" (objetos o números, etc.). Cada miembro se llama un elemento del conjunto. Un conjunto tiene solo uno de cada miembro (todos los miembros son únicos).
+43@Cómo describir un conjunto diciendo qué propiedades tienen sus miembros.
+44@es una manera de describir conjuntos continuos de números reales por los números que los unen.
+45@Una relación especial donde cada entrada tiene una sola salida. A menudo se escribe como "f (x)" donde x es el valor de entrada.
+46@Una forma de determinar dónde se encuentra en un mapa o gráfico según la distancia y la altura del punto.
+47@El plano que contiene el eje "x" y el eje "y".
+48@Todos los valores que entran en una función.
+49@El conjunto de todos los valores de salida de una función.
+50@Mínimo: el valor más pequeño. Máximo: el valor más grande.
+51@El punto donde una línea o curva cruza el eje y de un gráfico. En otras palabras: encuentre el valor de y cuando x es igual a 0
+52@Donde una función es igual al valor cero (0).
+53@Una función "aumenta" cuando el valor y aumenta a medida que aumenta el valor x.
+54@El valor y disminuye a medida que aumenta el valor x.
+55@Una función constante es una línea horizontal
+56@Qué empinada es una línea.
+57@Un diagrama de valores, generalmente mostrado como líneas.
+58@Información (como números y descripciones) organizada en filas y columnas.
+59@es una ecuación donde las variables representan valores conocidos.
+60@Para "deslizar": para mover una forma sin girarla ni voltearla. La forma todavía se ve exactamente igual, solo que en un lugar diferente.
+61@Es una frase corta que escribe para reafirmar lo que se le pide que resuelva en un problema verbal. Explica qué representarán las variables en su ecuación algebraica.
+62@Valor desconocido que queremos saber.
+63@Determine si una solución es correcta.
+64@Divida el cambio de altura por el cambio de distancia horizontal.
+65@Dice que dos razones (o fracciones) son iguales.
+66@Cuánto de algo por 1 unidad de otra cosa.
+67@Poner valores donde están las letras.
+68@Dos o más ecuaciones que comparten variables.
+69@Es cualquier punto que se encuentra en cada línea del sistema.
+70@Un término general que significa "escrito de la manera más comúnmente aceptada"
+71@La ecuación de una línea recta en la forma y = mx + b donde m es la pendiente de la línea y b es su intersección en y
+72@Son aquellos cuya gráfica es una línea recta. Una función lineal tiene la siguiente forma. y = f (x) = a + bx
+73@Una forma de determinar dónde se encuentra en un mapa o gráfico según la distancia y la altura del punto.
+74@Donde las líneas se cruzan (donde tienen un punto común).
+75@
+76@Al resolver una ecuación, estamos tratando de encontrar el número que, cuando se sustituye, formará una oración verdadera.
+77@El método para resolver "por sustitución" funciona resolviendo una de las ecuaciones (usted elige cuál) para una de las variables (elige cuál), y luego volviendo a conectarla a la otra ecuación, "sustituyendo" por la variable elegida y resolviendo para la otra. Luego, resuelves la primera variable.
+78@En el método de eliminación, puede sumar o restar las ecuaciones para obtener una ecuación en una variable. Cuando los coeficientes de una variable son opuestos, se suman las ecuaciones para eliminar una variable y cuando los coeficientes de una variable son iguales, se restan las ecuaciones para eliminar una variable.
+79@Líneas en un avión que nunca se encuentran. Siempre están a la misma distancia.
+80@Consta de al menos dos desigualdades lineales en las mismas variables. La solución de una desigualdad lineal es el par ordenado que es una solución a todas las desigualdades en el sistema y la gráfica de la desigualdad lineal es la gráfica de todas las soluciones del sistema.
+81@Una línea o borde alrededor del exterior de una forma. Define el espacio o área.
+82@Una desigualdad lineal es una desigualdad que implica una función lineal. Una desigualdad lineal contiene uno de los símbolos de la desigualdad. Muestra los datos que no son iguales en forma de gráfico.
+83@"Resolver" una desigualdad significa encontrar todas sus soluciones. Una "solución" de una desigualdad es un número que cuando se sustituye por la variable hace que la desigualdad sea una declaración verdadera.
+84@Es una función de la forma f (x) = ab <sup> x </sup>
+85@La cantidad que multiplicamos por cada vez en una secuencia geométrica.
+86@Donde un valor aumenta en proporción a su valor actual. Como siempre duplicar. La fórmula general es: y (x) = ab <sup> kx </sup>
+87@Proceso de reducción de una cantidad en una tasa de porcentaje constante durante un período de tiempo. Puede expresarse mediante la fórmula y = a (1-b) x en donde y es la cantidad final, a es la cantidad original, b es el factor de descomposición y x es la cantidad de tiempo que ha pasado.
+88@
+89@Un polinomio puede tener constantes (como 4), variables (como x o y) y exponentes (como el 2 en y <sup> 2 </sup>), que se pueden combinar mediante suma, resta, multiplicación y división, pero sin división por una variable.
+90@Son los números escritos delante de la variable con el mayor exponente.
+91@
+92@
+93@
+94@El mayor número que es un factor de dos (o más) otros números. Cuando encontramos todos los factores de dos o más números, y algunos factores son iguales ("comunes"), entonces el factor común más grande es el mayor factor común.
+95@Un número hecho al cuadrar un número entero.
+96@Una ecuación cuadrática se puede escribir como la diferencia de cuadrados perfectos cuando los coeficientes, los números multiplicados por las variables, son cuadrados perfectos y el exponente de cada término es par.
+97@Una ecuación donde el máximo exponente de la variable (generalmente "x") es un cuadrado (2). Una ecuación cuadrática generalmente se escribe ax <sup> 2 </sup> + bx + c = 0
+98@Es una curva plana simétrica en espejo y tiene forma de U aproximadamente.
+99@El vértice (donde la parábola hace su giro más agudo) está a medio camino entre el foco y la directriz.
+100@
+101@
+102@
+103@
+104@
+105@
