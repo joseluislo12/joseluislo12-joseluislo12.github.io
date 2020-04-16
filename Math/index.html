@@ -10,14 +10,13 @@
         <meta name="publisher" content="Jose Lobo">
 
         <!--Search Engine Optimization Meta Tags-->
-        <title>Jose Lobo | Math Vocabulary</title>
-        <meta name="description" content="Jose Lobo's portfolio. Skills, portfolio, education, contact">
-        <meta name="keywords" content="Software Engineer,Computer Science,Developer,Student">
+        <title>Math Vocabulary</title>
+        <meta name="description" content="Math vocabulary for Algebra I students">
+        <meta name="keywords" content="algebra,math,vocabulary,students,high school">
         <meta name="robots" content="index,follow">
         <meta name="revisit-after" content="7 days">
         <meta name="distribution" content="web">
         <meta name="robots" content="noodp">
-        <link rel="shortcut icon" href="./img/favicon.ico" />
         
         <!--Optional Meta Tags-->
         <meta name="distribution" content="web">
@@ -25,14 +24,14 @@
         <meta name="rating" content="general">
         <meta name="rating" content="safe for kids">
         <meta name="subject" content="Personal">
-        <meta name="title" content="Jose Lobo | Portfolio">
+        <meta name="title" content="Math Vocabulary">
         <meta name="copyright" content="Copyright 2020">
         <meta name="reply-to" content="j.lobolara@gmail.com">
-        <meta name="abstract" content="Jose Lobo is a Mechatronic Engineer, A.S. Computer Science student.">
+        <meta name="abstract" content="Math vocabulary for Algebra I students.">
         <meta name="city" content="New York City">
         <meta name="country" content="USA">
         <meta name="distribution" content="global">
-        <meta name="classification" content="Jose Lobo is a Mechatronic Engineer, A.S. Computer Science student.">
+        <meta name="classification" content="Math vocabulary for Algebra I students.">
     
         <!--Meta Tags for HTML pages on Mobile-->
         <meta name="format-detection" content="telephone=yes"/>
@@ -64,6 +63,15 @@
             </label>
 
             <ul class="menu" id="menu">
+                <a href="#" lang="en" id="btn-All">All</a>
+                <a href="#" lang="es" id="btn-Todo">Todo</a>
+
+                <a href="#" lang="en" id="btn-Exm">Examples</a>
+                <a href="#" lang="es" id="btn-Ejem">Ejemplos</a>
+
+                <a href="#" lang="en" id="btn-Exrc">Exercises</a>
+                <a href="#" lang="es" id="btn-Ejerc">Ejercicios</a>
+                
                 <a href="#" lang="en" id="btn-es">EN</a>
                 <a href="#" lang="es" id="btn-en">ES</a>
 
@@ -75,64 +83,21 @@
         
         <!-- CONTENT -->
 		<div class="main">
-            <!-- TEST -->
-            <div class="row no-gutters test" style="margin-top: 80px;">
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-7">XS</div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-7">SM</div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-7">MD</div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-7">LG</div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-7">XL</div>
-            </div>
-            <br>
-            <div class="row no-gutters test">
-                <div class="col-1">1</div><div class="col-1">1</div><div class="col-1">1</div>
-                <div class="col-1">1</div><div class="col-1">1</div><div class="col-1">1</div>
-                <div class="col-1">1</div><div class="col-1">1</div><div class="col-1">1</div>
-                <div class="col-1">1</div><div class="col-1">1</div><div class="col-1">1</div>
-            </div>
-
-            <hr>
-            <!-- TEST -->
-
-            <div id="buttons">
-                <div class="row no-gutters align-items-center text-center">
-                    <div class="col-2 offset-1">
-                        <button class="btn btn-blow" onclick="view(1)">
-                            <span class="">
-                                <p lang="en">All</p>
-                                <p lang="es">Todo</p>
-                            </span>
-                        </button>
+            <div class="container" id="all">
+                <div class="row row-cols-3 align-items-center text-center justify-content-center">
+                    <div class="col-10 offset-1">
+                        <br>
+                        <p lang="en">Select the words you want to visualize. You can select the ones you have already completed.</p>
+                        <p lang="es">Selecciona las palabras que deseas visualizar. Puedes seleccionar las que ya has completado.</p>
+                        <br>
                     </div>
-    
-                    <div class="col-2">
-                        <button class="btn btn-blow" onclick="view(2)">
-                            <span class="">
-                                <p lang="en">Examples</p>
-                                <p lang="es">Ejemplos</p>
-                            </span>
-                        </button>
-                    </div>
-    
-                    <div class="col-2">
-                        <button class="btn btn-blow" onclick="view(3)">
-                            <span class="">
-                                <p lang="en">Exercises</p>
-                                <p lang="es">Ejercicios</p>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
 
-            <div id="all">
-                <div class="row no-gutters align-items-center text-center">
-                    <div class="col-2">
+                    <div class="col-4 col-sm-2">
                         <input type="checkbox" id="chbxGeneral" name="chbxGeneral" class="switch" checked>
                         <label for="chbxGeneral">General</label>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-4 col-sm-2">
                         <input type="checkbox" id="chbxExm1" name="chbxExm1" class="switch" checked>
                         <label for="chbxExm1">
                             <p lang="en">Exam 1</p>
@@ -140,7 +105,7 @@
                         </label>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-4 col-sm-2">
                         <input type="checkbox" id="chbxExm2" name="chbxExm2" class="switch" checked>
                         <label for="chbxExm2">
                             <p lang="en">Exam 2</p>
@@ -148,7 +113,7 @@
                         </label>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-4 col-sm-2">
                         <input type="checkbox" id="chbxExm34" name="chbxExm34" class="switch" checked>
                         <label for="chbxExm34">
                             <p lang="en">Exam 3/4</p>
@@ -156,7 +121,7 @@
                         </label>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-4 col-sm-2">
                         <input type="checkbox" id="chbxExm5" name="chbxExm5" class="switch" checked>
                         <label for="chbxExm5">
                             <p lang="en">Exam 5</p>
@@ -165,217 +130,396 @@
                     </div>
                 </div>
 
-                <div class="row no-gutters align-items-center text-center words" id="wordsGeneral">
+                <div class="row align-items-center text-center justify-content-center words" id="wordsGeneral">
                     <div class="col-12">
-                        <p class=" text-uppercase">General</p>
+                        <hr class="hrDiv">
+                        <p class=" text-uppercase lblWords">General</p>
+                        <hr class="hrLabels">
                     </div>
                 </div>
 
                 <div class="row no-gutters align-items-center text-center words" id="wordsExm1">
                     <div class="col-12">
+                        <hr class="hrDiv">
                         <p lang="en" class=" text-uppercase">Exam 1</p>
                         <p lang="es" class=" text-uppercase">Examen 1</p>
+                        <hr class="hrLabels">
                     </div>
                 </div>
 
                 <div class="row no-gutters align-items-center text-center words" id="wordsExm2">
                     <div class="col-12">
+                        <hr class="hrDiv">
                         <p lang="en" class=" text-uppercase">Exam 2</p>
                         <p lang="es" class=" text-uppercase">Examen 2</p>
+                        <hr class="hrLabels">
                     </div>
                 </div>
 
                 <div class="row no-gutters align-items-center text-center words" id="wordsExm34">
                     <div class="col-12">
+                        <hr class="hrDiv">
                         <p lang="en" class=" text-uppercase">Exam 3/4</p>
                         <p lang="es" class=" text-uppercase">Examen 3/4</p>
+                        <hr class="hrLabels">
                     </div>
                 </div>
 
                 <div class="row no-gutters align-items-center text-center words" id="wordsExm5">
                     <div class="col-12">
+                        <hr class="hrDiv">
                         <p lang="en" class=" text-uppercase">Exam 5</p>
                         <p lang="es" class=" text-uppercase">Examen 5</p>
+                        <hr class="hrLabels">
+                    </div>
+                </div>
+                <hr class="hrDiv">
+            </div>
+
+            <div class="container" id="examples">
+                <div class="row row-cols-2 align-items-center text-center justify-content-center">
+                    <div class="col-12">
+                        <div class="alert alert-danger alert-dismissible fade show errorInit" role="alert" id="errorExm">
+                            <p lang="en"><strong>Error!</strong> You should select at least one option.</p>
+                            <p lang="es"><strong>!Error!</strong> Debes seleccionar al menos una opción.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-8">
+                        <div class="row no-gutters align-items-center text-center">
+                            <div class="col-12">
+                                <div class="card">
+                                    <header>
+                                        <div class="sponsor">Algebra I</div>
+                                        <div class="logo">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
+                                            </span>
+                                            <p lang="en">Words</p>
+                                            <p lang="es">Palabras</p>
+                                        </div>
+                                        <div class="sponsor">Algebra I</div>
+                                    </header>
+                                    <div class="announcement">
+                                        <h1 id="nameExm" lang ="en"></h1>
+                                        <h1 id="nameExmEs" lang ="es"></h1>
+                                        <br>
+                                        <h3 id="defExm" lang ="en"></h3>
+                                        <h3 id="defExmEs" lang ="es"></h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12"><br></div>
+        
+                            <div class="col-12">
+                                <div class="card">
+                                    <header>
+                                        <div class="sponsor">Algebra I</div>
+                                        <div class="logo">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
+                                            </span>
+                                            <p lang="en">Words</p>
+                                            <p lang="es">Palabras</p>
+                                        </div>
+                                        <div class="sponsor">Algebra I</div>
+                                    </header>
+                                    <div class="announcement">
+                                        <h1 id="name2Exm" lang ="en"></h1>
+                                        <h1 id="name2ExmEs" lang ="es"></h1>
+                                        <br>
+                                        <div id="exampleWord"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="row row-cols-3 align-items-center text-center justify-content-center">
+                            <div class="col-10 offset-1">
+                                <br>
+                                <p lang="en">Select the words you want to visualize.</p>
+                                <p lang="es">Selecciona las palabras que deseas visualizar.</p>
+                                <br>
+                            </div>
+                            
+                            <div class="col-4">
+                                <input type="checkbox" id="chbxGeneralExamp" name="chbxGeneralExamp" class="switch" checked>
+                                <label for="chbxGeneralExamp">General</label>
+                            </div>
+        
+                            <div class="col-4">
+                                <input type="checkbox" id="chbxExm1Examp" name="chbxExm1Examp" class="switch" checked>
+                                <label for="chbxExm1Examp">
+                                    <p lang="en">Exam 1</p>
+                                    <p lang="es">Examen 1</p>
+                                </label>
+                            </div>
+        
+                            <div class="col-4">
+                                <input type="checkbox" id="chbxExm2Examp" name="chbxExm2Examp" class="switch" checked>
+                                <label for="chbxExm2Examp">
+                                    <p lang="en">Exam 2</p>
+                                    <p lang="es">Examen 2</p>
+                                </label>
+                            </div>
+        
+                            <div class="col-4">
+                                <input type="checkbox" id="chbxExm34Examp" name="chbxExm34Examp" class="switch" checked>
+                                <label for="chbxExm34Examp">
+                                    <p lang="en">Exam 3/4</p>
+                                    <p lang="es">Examen 3/4</p>
+                                </label>
+                            </div>
+        
+                            <div class="col-4">
+                                <input type="checkbox" id="chbxExm5Examp" name="chbxExm5Examp" class="switch" checked>
+                                <label for="chbxExm5Examp">
+                                    <p lang="en">Exam 5</p>
+                                    <p lang="es">Examen 5</p>
+                                </label>
+                            </div>
+                        
+                            <div class="col-12"><br><br></div>
+                            
+                            <div class="col-12">
+                                <button class="btn btn-blow" onclick="example()">
+                                    <span class="">
+                                        <p lang="en">Change</p>
+                                        <p lang="es">Otra</p>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="examples">
-                <div class="row no-gutters align-items-center text-center">
-                    <div class="col-4">
-                        <div class="card">
-                            <header>
-                                <div class="sponsor">Algebra I</div>
-                                <div class="logo">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
-                                    </span>
-                                    <p lang="en">Words</p>
-                                    <p lang="es">Palabras</p>
-                                </div>
-                                <div class="sponsor">Algebra I</div>
-                            </header>
-                            <div class="announcement">
-                                <h1 id="nameExm" lang ="en"></h1>
-                                <h1 id="nameExmEs" lang ="es"></h1>
-                                <br>
-                                <h3 id="defExm" lang ="en"></h3>
-                                <h3 id="defExmEs" lang ="es"></h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 offset-3">
-                        <div class="card">
-                            <header>
-                                <div class="sponsor">Algebra I</div>
-                                <div class="logo">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
-                                    </span>
-                                    <p lang="en">Words</p>
-                                    <p lang="es">Palabras</p>
-                                </div>
-                                <div class="sponsor">Algebra I</div>
-                            </header>
-                            <div class="announcement">
-                                <h1 id="name2Exm" lang ="en"></h1>
-                                <h1 id="name2ExmEs" lang ="es"></h1>
-                                <br>
-                                <div id="exampleWord"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-10 offset-1">
-                        <button class="btn btn-blow" onclick="example()">
-                            <span class="">
-                                <p lang="en">Otra</p>
-                                <p lang="es">Otra</p>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="exerc">
+            <div class="container" id="exerc">
                 <div id="exInit">
-                    <p lang="en">Select the words you want to include in the questions:</p>
-                    <p lang="es">Selecciona las palabras que deseas incluir en las preguntas:</p>
+                    <div class="row row-cols-3 align-items-center text-center justify-content-center">
+                        <div class="col-12">
+                            <br>
+                            <p lang="en">Select the words you want to include in the questions:</p>
+                            <p lang="es">Selecciona las palabras que deseas incluir en las preguntas:</p>
+                            <br>
+                        </div>
 
-                    <div class="row no-gutters align-items-center text-center">
-                        <div class="col-2">
-                            <input type="checkbox" id="chbxGeneralExc" name="chbxGeneralExc" class="switch">
-                            <label for="chbxGeneralExc">General</label>
+                        <div class="col-12">
+                            <div class="row row-cols-3 align-items-center text-center justify-content-center">
+                                <div class="col-2">
+                                    <input type="checkbox" id="chbxGeneralExc" name="chbxGeneralExc" class="switch">
+                                    <label for="chbxGeneralExc">General</label>
+                                </div>
+            
+                                <div class="col-2">
+                                    <input type="checkbox" id="chbxExm1Exc" name="chbxExm1Exc" class="switch" >
+                                    <label for="chbxExm1Exc">
+                                        <p lang="en">Exam 1</p>
+                                        <p lang="es">Examen 1</p>
+                                    </label>
+                                </div>
+            
+                                <div class="col-2">
+                                    <input type="checkbox" id="chbxExm2Exc"Exc name="chbxExm2Exc" class="switch" >
+                                    <label for="chbxExm2Exc">
+                                        <p lang="en">Exam 2</p>
+                                        <p lang="es">Examen 2</p>
+                                    </label>
+                                </div>
+            
+                                <div class="col-2">
+                                    <input type="checkbox" id="chbxExm34Exc" name="chbxExm34Exc" class="switch">
+                                    <label for="chbxExm34Exc">
+                                        <p lang="en">Exam 3/4</p>
+                                        <p lang="es">Examen 3/4</p>
+                                    </label>
+                                </div>
+            
+                                <div class="col-2">
+                                    <input type="checkbox" id="chbxExm5Exc" name="chbxExm5Exc" class="switch">
+                                    <label for="chbxExm5Exc">
+                                        <p lang="en">Exam 5</p>
+                                        <p lang="es">Examen 5</p>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-    
-                        <div class="col-2">
-                            <input type="checkbox" id="chbxExm1Exc" name="chbxExm1Exc" class="switch" >
-                            <label for="chbxExm1Exc">
-                                <p lang="en">Exam 1</p>
-                                <p lang="es">Examen 1</p>
-                            </label>
+
+                        <div class="col-12" >
+                            <hr class="hrDiv">
+                            
+                            <p lang="en">Below you will have three types of questions:</p>
+                            <p lang="es">A continuación tendrás tres tipos de preguntas:</p>
+
+                            <br>
+
+                            <ol>
+                                <li lang="en">1. Select the name that corresponds to the definition</li>
+                                <li lang="en">2. Decide if the definition corresponds to the given word</li>
+                                <li lang="en">3. Decide if the example corresponds to the given word</li>
+                                <li lang="es">1. Seleccionar el nombre que corresponde a la definición</li>
+                                <li lang="es">2. Decidir si la definición corresponde a la palabra dada</li>
+                                <li lang="es">3. Decidir si el ejemplo corresponde a la palabra dada</li>
+                            </ol>
+
+                            <hr class="hrDiv">
+
+                            <p lang="en">You will have 10 different questions and at the end you will have a score.</p>
+                            <p lang="es">Tendrás 10 preguntas diferentes y al final tendrás un puntaje.</p>
+
+                            <br>
                         </div>
-    
-                        <div class="col-2">
-                            <input type="checkbox" id="chbxExm2Exc"Exc name="chbxExm2Exc" class="switch" >
-                            <label for="chbxExm2Exc">
-                                <p lang="en">Exam 2</p>
-                                <p lang="es">Examen 2</p>
-                            </label>
-                        </div>
-    
-                        <div class="col-2">
-                            <input type="checkbox" id="chbxExm34Exc" name="chbxExm34Exc" class="switch">
-                            <label for="chbxExm34Exc">
-                                <p lang="en">Exam 3/4</p>
-                                <p lang="es">Examen 3/4</p>
-                            </label>
-                        </div>
-    
-                        <div class="col-2">
-                            <input type="checkbox" id="chbxExm5Exc" name="chbxExm5Exc" class="switch">
-                            <label for="chbxExm5Exc">
-                                <p lang="en">Exam 5</p>
-                                <p lang="es">Examen 5</p>
-                            </label>
+
+                        <div class="col-12">
+                            <button class="btn btn-blow" onclick="startExc()">
+                                <span class="">
+                                    <p lang="en">Start</p>
+                                    <p lang="es">Iniciar</p>
+                                </span>
+                            </button>
+
+                            <div class="alert alert-danger alert-dismissible fade show errorInit" role="alert" id="errorInit">
+                                <p lang="en"><strong>Error!</strong> You should select at least one option.</p>
+                                <p lang="es"><strong>!Error!</strong> Debes seleccionar al menos una opción.</p>
+                            </div>
                         </div>
                     </div>
-    
-                    <p lang="en">
-                        Below you will have three types of questions:
-                         1. Select the name that corresponds to the definition
-                         2. Decide if the definition corresponds to the given word
-                         3. Decide if the example corresponds to the given word
-    
-                         You will have 10 different questions and at the end you will have a score.
-                    </p>
-                    <p lang="es">
-                        A continuación tendrás tres tipos de preguntas:
-                        1. Seleccionar el nombre que corresponde a la definición
-                        2. Decidir si la definición corresponde a la palabra dada
-                        3. Decidir si el ejemplo corresponde a la palabra dada
-    
-                        Tendrás 10 preguntas diferentes y al final tendrás un puntaje.
-                    </p>
-    
-                    <button class="btn btn-blow" onclick="startExc()">
-                        <span class="">
-                            <p lang="en">Start</p>
-                            <p lang="es">Iniciar</p>
-                        </span>
-                    </button>
                 </div>
 
                 <div id="exQuest">
-                    <div>
-                        <p id="numQuest"></p>
-                    </div>
-                    <div id="exCard">
-                        <div class="card">
-                            <header>
-                                <div class="sponsor">Algebra I</div>
-                                <div class="logo">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
-                                    </span>
-                                    <p lang="en">Words</p>
-                                    <p lang="es">Palabras</p>
+                    <div class="row row-cols-2 align-items-center text-center justify-content-center">
+                        <div class="col-12 col-lg-7">
+                            <div id="exCard">
+                                <div class="card">
+                                    <header>
+                                        <div class="sponsor">Algebra I</div>
+                                        <div class="logo">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
+                                            </span>
+                                            <p lang="en">Words</p>
+                                            <p lang="es">Palabras</p>
+                                        </div>
+                                        <div class="sponsor">Algebra I</div>
+                                    </header>
+                                    <div class="announcement">
+                                        <h1 id="nameQuest" lang ="en"></h1>
+                                        <h1 id="nameQuestEs" lang ="es"></h1>
+                                        <br>
+                                        <h3 id="defQuest" lang ="en"></h3>
+                                        <h3 id="defQuestEs" lang ="es"></h3>
+                                    </div>
                                 </div>
-                                <div class="sponsor">Algebra I</div>
-                            </header>
-                            <div class="announcement">
-                                <h1 id="nameQuest" lang ="en"></h1>
-                                <h1 id="nameQuestEs" lang ="es"></h1>
-                                <br>
-                                <h3 id="defQuest" lang ="en"></h3>
-                                <h3 id="defQuestEs" lang ="es"></h3>
                             </div>
                         </div>
-                    </div>
-                    <div id="exOpt">
-                    </div>
-                    <div id="exNext">
-                        <button class="btn btn-blow" id="nextBtn">
-                            <span class="">
-                                <p lang="en">Next</p>
-                                <p lang="es">Siguiente</p>
-                            </span>
-                        </button>
+
+                        <div class="col-12 col-lg-5">
+                            <div class="row row-cols-3 align-items-left text-center justify-content-left">
+                                <br>
+                                <p id="numQuest"></p>
+
+                                <div class="col-12">
+                                    <div id="exOpt">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12"><br></div>
+
+                        <div class="col-12 col-md-6">
+                            <div id="exRest">
+                                <button class="btn btn-blow" id="restBtn" onclick="restartQuiz()">
+                                    <span class="">
+                                        <p lang="en">Restart</p>
+                                        <p lang="es">Reiniciar</p>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div id="exNext">
+                                <button class="btn btn-blow" id="nextBtn">
+                                    <span class="">
+                                        <p lang="en">Next</p>
+                                        <p lang="es">Siguiente</p>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="alert alert-danger alert-dismissible fade show errorInit" role="alert" id="errorAnsw">
+                                <p lang="en"><strong>Error!</strong> You should select at least one option.</p>
+                                <p lang="es"><strong>!Error!</strong> Debes seleccionar al menos una opción.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div id="finalScore">
-                    <p lang="en">Your score:</p>
-                    <p lang="es">Tu puntaje:</p>
-                    <p id="quizScore"></p>
+                    <div class="row row-cols-2 align-items-center text-center justify-content-center">
+                        <div class="col-12">
+                            <br>
+                            
+                            <p lang="en">FINAL SCORE</p>
+                            <p lang="es">PUNTAJE FINAL</p>
 
-                    <button class="btn btn-blow" id="restart" onclick="restartQuiz()">
-                        <span class="">
-                            <p lang="en">Restart</p>
-                            <p lang="es">Reiniciar</p>
-                        </span>
-                    </button>
+                            <br>
+
+                            <div class="alert alert-danger alert-dismissible fade show errorInit" role="alert" id="quest1">
+                                <p lang="en"><strong>Cheer up!</strong> Do not be disappointed. Keep studying to improve.</p>
+                                <p lang="es"><strong>!Ánimo!</strong> No te decepciones. Sigue estudiando para mejorar.</p>
+                            </div>
+
+                            <div class="alert alert-warning alert-dismissible fade show errorInit" role="alert" id="quest2">
+                                <p lang="en"><strong>You can get better!</strong> You have answered half or less of the questions correctly.</p>
+                                <p lang="es"><strong>!Puedes mejorar!</strong> Has respondido la mitad o menos de las preguntas correctamente.</p>
+                            </div>
+
+                            <div class="alert alert-success alert-dismissible fade show errorInit" role="alert" id="quest3">
+                                <p lang="en"><strong>Congratulations!</strong> You have answered most of the questions correctly.</p>
+                                <p lang="es"><strong>!¡Felicidades!</strong> Has respondido la mayoría de las preguntas correctamente.</p>
+                            </div>
+
+                            <div class="alert alert-primary alert-dismissible fade show errorInit" role="alert" id="quest4">
+                                <p lang="en"><strong>Awesome!</strong> You have answered all the questions correctly.</p>
+                                <p lang="es"><strong>!Perfecto!</strong> Has contestado correctamente a todas las preguntas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6">
+                            <p lang="en">Your score:</p>
+                            <p lang="es">Tu puntaje:</p>
+                            <p id="quizScore"></p>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <p lang="en">You can check the following links for more information:</p>
+                            <p lang="es">Puedes consultar los siguientes enlaces para tener más información:</p>
+
+                            <ul>
+                                <li><a href="https://www.mathsisfun.com/">Math is fun</a></li>
+                                <li><a href="https://www.khanacademy.org/math/high-school-math#algebra">Khan Academy</a></li>
+                                <li><a href="https://www.mathplanet.com/education/algebra-1">Math Planet</a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLzjlFur5AtcmEwWfFfKnHf_zqoPNZtP_q">Math Help</a></li>
+                                <li><a href="https://soymatematicas.com/" lang="es">Soy matemáticas</a></li>
+                                <li><a href="https://matematicaparaestudiantes.net/" lang="es">Matemáticas para estudiantes</a></li>
+                                <li><a href="https://www.mateslibres.com/" lang="es">Mates libres</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-blow" id="restart" onclick="restartQuiz()">
+                                <span class="">
+                                    <p lang="en">Restart</p>
+                                    <p lang="es">Reiniciar</p>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,6 +528,7 @@
         <a href="#home" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
         
         <!-- FOOTER -->
+        <br>
 		<footer id="Footer">
 			<div class="container">
 				<div class="row align-items-center no-gutters justify-content-center">

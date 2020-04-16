@@ -80,6 +80,10 @@ abbr,acronym{
 body {
     font-family: 'Poppins';
 }
+/* Body - Margin Top */
+#all, #examples, #exerc{
+    margin-top: 80px;
+}
 /* Scroll To Top */
 .scroll-to-top {
     background-color: var(--grey_Global);
@@ -91,7 +95,8 @@ body {
     text-align: center;
     color: var(--white);
     position: fixed;
-    right: 10px;
+    right: 40px;
+    bottom: 70px;
     z-index: 999;
     border-radius: 50%;
     border: 1px solid var(--scroll_border);
@@ -101,6 +106,9 @@ body {
 .scroll-to-top:hover, .scroll-to-top:focus {
     background-color: var(--red_Global);
     color: var(--white);
+}
+.main, #examples{
+    width: 100%;
 }
 
 /* ---------- HEADER ---------- */
@@ -170,7 +178,7 @@ mark{
 }
 
 /* Responsive */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 700px) {
     .show-menu-btn,.hide-menu-btn{
         display: block;
     }
@@ -214,26 +222,6 @@ mark{
     outline-color: transparent;
 }
 /* btn-blow */
-.btn-blow::after {
-    content: "";
-    width: 120px;
-    height: 120px;
-    background-color: var(--aqua_Global);
-    position: absolute;
-    top: calc(-10%);
-    left: calc(-5%);
-    opacity: 0; 
-    z-index: -4;
-    transition-duration: .4s;
-    pointer-events: none;
-}
-.btn-blow:focus::after {
-    opacity: 1;
-    transform: scale(1);
-}
-.btn-blow:focus:hover::after {
-    transform: scale(1.2);
-}
 .btn-blow {
     width: 100px;
     height: 100px;
@@ -411,11 +399,20 @@ mark{
     }
 }
 
+/* ---------- ALL ---------- */
+/* HR Labels */
+.hrLabels{
+    background-color: var(--aqua_Global);
+    width: 20%;
+}
+/* HR Sections */
+.hrDiv{
+    background-color: var(--red_Global);
+    height: 2.5px;
+}
+
 /* ---------- EXAMPLES ---------- */
 /* Info Cards */
-.card{
-    display: flex;
-}
 .card h1, h3{
     color: var(--white);
 }
@@ -516,29 +513,74 @@ mark{
 .announcement:after {
     right: -3px;
 }
+.sponsor{
+    font-size: 0.5em;
+}
 
- /* ---------- FOOTER ---------- */
- /* Position */
- #Footer{
-     position: fixed;
-     height: 60px;
-     display: none;
-     width: 100%;
-     z-index: 9;
-     text-align: center;
-     color: var(--white);
-     padding: 20px 0 0 0;
-     background: var(--grey_Global);
-     bottom: 0px;
- }
- #Footer h6{
-     color: var(--white);
- }
+/* ---------- QUIZ ---------- */
+/* Alert Init */
+.errorInit{
+    position: fixed;
+    top: 100px;
+    display: none;
+    z-index: 9999;
+}
+/* Label Answers */
+.lblAnsw{
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+/* Position */
+#Footer{
+    height: 60px;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    color: var(--white);
+    padding: 20px 0 0 0;
+    background: var(--grey_Global);
+    bottom: 0px;
+    position: relative;
+}
+#Footer h6{
+    color: var(--white);
+}
 
  /****************** TEST ********************/
  .test div{
      border: solid black;
- }
- #all .words{
-    border: solid black;
- }
+}
+
+/* RESPONSIVE */
+ /* Smartphones 
+-> Portrait: @media (min-width: 320px) and (max-width: 480px)
+-> Landscape: @media (min-width: 481px) and (max-width: 767px)
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+}
+
+/* Tablet - Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {    
+}
+
+/* Tablet - Portrait */
+@media (min-width: 768px) and (max-width: 1024px) {    
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        font-size: 1.2em;
+    }
+    #exQuest{
+        font-size: 1.0em;
+    }
+}
+/* Desktops */
+@media (min-width: 1281px) {
+    body{
+        font-size: 1.5em;
+    }
+}

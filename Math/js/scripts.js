@@ -10,7 +10,9 @@ var trueAnsw;
         // Init
         $('[lang="es"]').hide();
         var lang = 'en';
-        $('#all').hide();
+        $('#all').show();
+        $('#btn-All').addClass("menu_active");
+        $('#btn-Todo').addClass("menu_active");
         $('#examples').hide();
         $('#exerc').hide();$('#exQuest').hide();$('#finalScore').hide();
 
@@ -27,19 +29,58 @@ var trueAnsw;
             $('[lang="es"]').show();
         });
 
-        /* Scroll To Top */
-        $(window).scroll(function(){
-            if ($(this).scrollTop() >= 500) {
-                $('.scroll-to-top').fadeIn();
+        // All words
+        $("#btn-All").click(function(){ view(1) });
+        $("#btn-Todo").click(function(){ view(1) });
+
+        // Examples
+        $("#btn-Exm").click(function(){ view(2) });
+        $("#btn-Ejem").click(function(){ view(2) });
+
+        // Exercises
+        $("#btn-Exrc").click(function(){ view(3) });
+        $("#btn-Ejerc").click(function(){ view(3) });
+
+        // Smooth Scroll
+        $('a.smoth-scroll').on("click", function (e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - 50
+            }, 1000);
+            e.preventDefault();
+        });
+        // Scroll Naviagation Background Change with Sticky Navigation
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $('.header-top-area').addClass('navigation-background');
             } else {
-                $('.scroll-to-top').fadeOut();
+                $('.header-top-area').removeClass('navigation-background');
             }
         });
-    
-        $('.scroll-to-top').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-            return false;
+        // Mobile Navigation Hide or Collapse on Click
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
         });
+        $('body').scrollspy({
+            target: '.navbar-collapse',
+            offset: 195
+        
+		});
+
+        // Scroll To Top    
+        $(window).scroll(function(){
+        if ($(this).scrollTop() >= 100) {
+            $('.scroll-to-top').css('display', 'inline');
+         } else {
+            $('.scroll-to-top').css('display', 'none');
+         }
+	    });
+	    $('.scroll-to-top').click(function(){
+		  $('html, body').animate({scrollTop : 0},800);
+		  return false;
+	    });
 
         /* Filter Words */
         $('#chbxGeneral').click(function(){
@@ -94,7 +135,7 @@ function init(){
 
                 for(var i = 0; i < lines.length; i++){
                     var div = document.createElement('div');
-                    div.setAttribute('class', 'col-2');
+                    div.setAttribute('class', 'col-4 col-sm-3');
                     
                     var inpt = document.createElement('input');
                     inpt.setAttribute('type','checkbox');
@@ -118,6 +159,8 @@ function init(){
                     inpt.setAttribute('id','chbx' + wordPlace);
                     inpt.setAttribute('name','chbx' + wordPlace);
                     div.appendChild(inpt);
+                    var spaceBr = document.createElement('br');
+                    div.appendChild(spaceBr);
 
                     lbl.setAttribute('for','chbx' + wordPlace);
                     var txtEn = document.createTextNode(words[1]);
@@ -137,151 +180,220 @@ function init(){
     rawFile.send(null);
 
     quizState = 0;
+
+    changeFavicon();
+
+    document.getElementById("nameExm").innerHTML = "Word"; document.getElementById("name2Exm").innerHTML = "Word";
+    document.getElementById("nameExmEs").innerHTML = "Palabra"; document.getElementById("name2ExmEs").innerHTML = "Palabra";
+    document.getElementById("defExm").innerHTML = "Definition";
+    document.getElementById("defExmEs").innerHTML = "Definición";
+    var element = document.getElementById("exampleWord");
+    element.innerHTML = '';
+    var textH3 = document.createElement('h3');
+    var pEn = document.createElement('p');
+    pEn.setAttribute('lang','en');
+    var pEs = document.createElement('p');
+    pEs.setAttribute('lang','es');
+    pEs.setAttribute('style','display: none;');
+    var txtEn = document.createTextNode("Example");
+    pEn.appendChild(txtEn);
+    var txtEs = document.createTextNode("Ejemplo");
+    pEs.appendChild(txtEs);
+    textH3.appendChild(pEn);
+    textH3.appendChild(pEs);
+    element.appendChild(textH3);
 }
 
 function view(sec){
     $('#all').hide();
     $('#examples').hide();
-    $('#exerc').hide();        
-
+    $('#exerc').hide();
+    $('.menu a').removeClass("menu_active")
+    $('#Footer').show();
 
     switch(sec){
         case 1:
             $('#all').show();
+            $('#btn-All').addClass("menu_active");
+            $('#btn-Todo').addClass("menu_active");
         break;
         case 2:
             $('#examples').show();
+            $('#btn-Exm').addClass("menu_active");
+            $('#btn-Ejem').addClass("menu_active");
         break;
         case 3:
             $('#exerc').show();
+            $('#btn-Exrc').addClass("menu_active");
+            $('#btn-Ejerc').addClass("menu_active");
+            if(quizState > 10){ $('#Footer').hide(); }
         break;
     }
 }
 
 function example(){
-    var fWords = './res/words.txt';
-    var fDefEn = './res/def_en.txt';
-    var fDefEs = './res/def_es.txt';
-    var fExEn = './res/ex_en.txt';
-    var fExEs = './res/ex_es.txt';
-    var allWords, allDefEn, allDefEs, allExEn, allExEs;
-    var lnWords, lnDefEn, lnDefEs, lnExEn, lnExEs;
-    var showExm = 0;
+    var exmGeneral = $('#chbxGeneralExamp').is(':checked');
+    var exmExm1 = $('#chbxExm1Examp').is(':checked');
+    var exmExm2 = $('#chbxExm2Examp').is(':checked');
+    var exmExm34 = $('#chbxExm34Examp').is(':checked');
+    var exmExm5 = $('#chbxExm5Examp').is(':checked');
+    var exmpl = 0;
+    if(exmGeneral){ exmpl += Math.pow(2, 4); }
+    if(exmExm1){ exmpl += Math.pow(2, 3); }
+    if(exmExm2){ exmpl += Math.pow(2, 2); }
+    if(exmExm34){ exmpl += Math.pow(2, 1); }
+    if(exmExm5){ exmpl += Math.pow(2, 0); }   
 
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET",fWords,false);
-    rawFile.onreadystatechange = function() {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status === 0){ 
-                allWords = rawFile.responseText;
-                lnWords = allWords.split("\n");
-                showExm++;
+    if(exmpl > 0){ 
+        var fWords = './res/words.txt';
+        var fDefEn = './res/def_en.txt';
+        var fDefEs = './res/def_es.txt';
+        var fExEn = './res/ex_en.txt';
+        var fExEs = './res/ex_es.txt';
+        var allWords, allDefEn, allDefEs, allExEn, allExEs;
+        var lnWords, lnDefEn, lnDefEs, lnExEn, lnExEs;
+        var showExm = 0;
+
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET",fWords,false);
+        rawFile.onreadystatechange = function() {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status === 0){ 
+                    allWords = rawFile.responseText;
+                    lnWords = allWords.split("\n");
+                    showExm++;
+                }
             }
         }
-    }
-    rawFile.send(null);
-    rawFile.open("GET",fDefEn,false);
-    rawFile.onreadystatechange = function() {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status === 0){ 
-                allDefEn = rawFile.responseText;
-                lnDefEn = allDefEn.split("\n");
-                showExm++;
+        rawFile.send(null);
+        rawFile.open("GET",fDefEn,false);
+        rawFile.onreadystatechange = function() {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status === 0){ 
+                    allDefEn = rawFile.responseText;
+                    lnDefEn = allDefEn.split("\n");
+                    showExm++;
+                }
             }
         }
-    }
-    rawFile.send(null);
-    rawFile.open("GET",fDefEs,false);
-    rawFile.onreadystatechange = function() {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status === 0){ 
-                allDefEs = rawFile.responseText;
-                lnDefEs = allDefEs.split("\n");
-                showExm++;
+        rawFile.send(null);
+        rawFile.open("GET",fDefEs,false);
+        rawFile.onreadystatechange = function() {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status === 0){ 
+                    allDefEs = rawFile.responseText;
+                    lnDefEs = allDefEs.split("\n");
+                    showExm++;
+                }
             }
         }
-    }
-    rawFile.send(null);
-    rawFile.open("GET",fExEn,false);
-    rawFile.onreadystatechange = function() {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status === 0){ 
-                allExEn = rawFile.responseText;
-                lnExEn = allExEn.split("\n");
-                showExm++;
+        rawFile.send(null);
+        rawFile.open("GET",fExEn,false);
+        rawFile.onreadystatechange = function() {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status === 0){ 
+                    allExEn = rawFile.responseText;
+                    lnExEn = allExEn.split("\n");
+                    showExm++;
+                }
             }
         }
-    }
-    rawFile.send(null);
-    rawFile.open("GET",fExEs,false);
-    rawFile.onreadystatechange = function() {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status === 0){ 
-                allExEs = rawFile.responseText;
-                lnExEs = allExEs.split("\n");
-                showExm++;
+        rawFile.send(null);
+        rawFile.open("GET",fExEs,false);
+        rawFile.onreadystatechange = function() {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status === 0){ 
+                    allExEs = rawFile.responseText;
+                    lnExEs = allExEs.split("\n");
+                    showExm++;
+                }
             }
         }
-    }
-    rawFile.send(null);
+        rawFile.send(null);
 
-    if(showExm == 5){
-        var end = false;
-        while(!end){
-            var exm = Math.floor(Math.random() * (106 - 1)) + 1;
-            var word = lnWords[exm - 1].split(".");
-            var defEn = lnDefEn[exm - 1].split("@");
-            var defEs = lnDefEs[exm - 1].split("@");
-            var exEn = lnExEn[exm - 1].split("@");
-            var exEs = lnExEs[exm - 1].split("@");
+        if(showExm == 5){
+            var end = false;
+            var checkWordExmp = false;
+            while(!end){
+                var exm = Math.floor(Math.random() * (106 - 1)) + 1;
 
-            document.getElementById("nameExm").innerHTML = word[1]; document.getElementById("name2Exm").innerHTML = word[1];
-            document.getElementById("nameExmEs").innerHTML = word[2]; document.getElementById("name2ExmEs").innerHTML = word[2];
+                var G = 0, E1 = 0, E2 = 0, E34 = 0, E5 = 0;
+                var temp = 0;
 
-            document.getElementById("defExm").innerHTML = defEn[1];
-            document.getElementById("defExmEs").innerHTML = defEs[1];
+                E5 = exmpl % 2; temp = Math.floor(exmpl / 2);
+                if(exmpl > 1) { E34 = temp % 2; temp = Math.floor(temp / 2); }
+                if(exmpl > 3) { E2 = temp % 2; temp = Math.floor(temp / 2); }
+                if(exmpl > 7) { E1 = temp % 2; temp = Math.floor(temp / 2); }
+                if(exmpl > 15) { G = temp % 2; }
 
-            var element = document.getElementById("exampleWord");
-            element.innerHTML = '';
+                if((exm > 83) && (E5 == 1)){ checkWordExmp = true; }
+                if(((exm > 66) && (exm < 84)) && (E34 == 1)){ checkWordExmp = true; }
+                if(((exm > 44) && (exm < 67)) && (E2 == 1)){ checkWordExmp = true; }
+                if(((exm > 28) && (exm < 45)) && (E1 == 1)){ checkWordExmp = true; }
+                if((exm < 29) && (G == 1)){ checkWordExmp = true; }
+
+                if(checkWordExmp){
+                    var word = lnWords[exm - 1].split(".");
+                    var defEn = lnDefEn[exm - 1].split("@");
+                    var defEs = lnDefEs[exm - 1].split("@");
+                    var exEn = lnExEn[exm - 1].split("@");
+                    var exEs = lnExEs[exm - 1].split("@");
+
+                    document.getElementById("nameExm").innerHTML = word[1]; document.getElementById("name2Exm").innerHTML = word[1];
+                    document.getElementById("nameExmEs").innerHTML = word[2]; document.getElementById("name2ExmEs").innerHTML = word[2];
+
+                    document.getElementById("defExm").innerHTML = defEn[1];
+                    document.getElementById("defExmEs").innerHTML = defEs[1];
+
+                    var element = document.getElementById("exampleWord");
+                    element.innerHTML = '';
+                    
+                    if(defEn[1].length > 1){
+                        if(exEn[1].length > 2){
+                            var textH3 = document.createElement('h3');
+                            var pEn = document.createElement('p');
+                            pEn.setAttribute('lang','en');
+                            var pEs = document.createElement('p');
+                            pEs.setAttribute('lang','es');
+                            pEs.setAttribute('style','display: none;');
+                
+                            var txtEn = document.createTextNode(exEn[1]);
+                            pEn.appendChild(txtEn);
+                            var txtEs = document.createTextNode(exEs[1]);
+                            pEs.appendChild(txtEs);
+                
+                            textH3.appendChild(pEn);
+                            textH3.appendChild(pEs);
+                            element.appendChild(textH3);
             
-            if(defEn[1].length > 1){
-                if(exEn[1].length > 2){
-                    var textH3 = document.createElement('h3');
-                    var pEn = document.createElement('p');
-                    pEn.setAttribute('lang','en');
-                    var pEs = document.createElement('p');
-                    pEs.setAttribute('lang','es');
-                    pEs.setAttribute('style','display: none;');
-        
-                    var txtEn = document.createTextNode(exEn[1]);
-                    pEn.appendChild(txtEn);
-                    var txtEs = document.createTextNode(exEs[1]);
-                    pEs.appendChild(txtEs);
-        
-                    textH3.appendChild(pEn);
-                    textH3.appendChild(pEs);
-                    element.appendChild(textH3);
-    
-                    end = true;
-                }
-                else{
-                    var img = document.createElement('img');
-                    var num = parseInt(exm, 10);
-                    img.setAttribute('src','./img/exm/' + num + '.png');
-        
-                    element.appendChild(img);
-    
-                    end = true;
+                            end = true;
+                        }
+                        else{
+                            var img = document.createElement('img');
+                            var num = parseInt(exm, 10);
+                            img.setAttribute('src','./img/exm/' + num + '.png');
+                
+                            element.appendChild(img);
+            
+                            end = true;
+                        }
+                    }
                 }
             }
         }
+        else{
+            alert("Error");
+        }
     }
-    else{
-        alert("Error");
+    else { 
+        $('#errorExm').show();
+        setTimeout(function() { $('#errorExm').hide()}, 2500);
     }
 }
 
 function startExc(){
+    $('#errorInit').hide();
+    
     var wGeneral = $('#chbxGeneralExc').is(':checked');
     var wExm1 = $('#chbxExm1Exc').is(':checked');
     var wExm2 = $('#chbxExm2Exc').is(':checked');
@@ -299,7 +411,10 @@ function startExc(){
     resQuiz = 0;    
 
     if(s > 0){ wordQuiz = s; startQuiz(); }
-    else { alert("ERROR"); }
+    else { 
+        $('#errorInit').show();
+        setTimeout(function() { $('#errorInit').hide()}, 2500);
+    }
 }
 
 function startQuiz(){
@@ -312,7 +427,6 @@ function startQuiz(){
 
 function nextQues(typeQues){  
     quizState++;
-
     var checkedAns = false;
 
     if(quizState > 1){ checkedAns = checkAnsw(); }
@@ -390,14 +504,15 @@ function nextQues(typeQues){
             element.innerHTML = '';
             element.innerHTML = quizState + "/10";
 
-            /*
+            var end = false;
+            var exm;
             var G = 0, E1 = 0, E2 = 0, E34 = 0, E5 = 0;
 
             while(!end){
                 exm = Math.floor(Math.random() * (106 - 1)) + 1;
 
                 var temp = 0;
-                E5 = wordQuiz % 2; temp = Math.floor(exm / 2);
+                E5 = wordQuiz % 2; temp = Math.floor(wordQuiz / 2);
                 if(wordQuiz > 1) { E34 = temp % 2; temp = Math.floor(temp / 2); }
                 if(wordQuiz > 3) { E2 = temp % 2; temp = Math.floor(temp / 2); }
                 if(wordQuiz > 7) { E1 = temp % 2; temp = Math.floor(temp / 2); }
@@ -418,21 +533,6 @@ function nextQues(typeQues){
 
                     if(defEn[1].length > 1){ end = true; }
                 }
-            }
-            */
-
-            var end = false;
-            var exm;
-            while(!end){
-                exm = Math.floor(Math.random() * (106 - 1)) + 1;
-                
-                var word = lnWords[exm - 1].split(".");
-                var defEn = lnDefEn[exm - 1].split("@");
-                var defEs = lnDefEs[exm - 1].split("@");
-                var exEn = lnExEn[exm - 1].split("@");
-                var exEs = lnExEs[exm - 1].split("@");
-
-                if(defEn[1].length > 1){ end = true; }
             }
             
             document.getElementById("nameQuest").innerHTML = '';
@@ -500,6 +600,7 @@ function nextQues(typeQues){
                         var lblrdbtn = document.createElement('label');
                         lblrdbtn.setAttribute("for", "opt" + i);
                         lblrdbtn.setAttribute("lang", "en");
+                        lblrdbtn.setAttribute("class", "lblAnsw");
                         var txtlbl = document.createTextNode(opts[i]);
                         lblrdbtn.appendChild(txtlbl);
 
@@ -507,6 +608,7 @@ function nextQues(typeQues){
                         lblrdbtnEs.setAttribute("for", "opt" + i);
                         lblrdbtnEs.setAttribute("lang", "es");
                         lblrdbtnEs.setAttribute('style','display: none;');
+                        lblrdbtnEs.setAttribute("class", "lblAnsw");
                         var txtlblEs = document.createTextNode(optsEs[i]);
                         lblrdbtnEs.appendChild(txtlblEs);
 
@@ -570,6 +672,7 @@ function nextQues(typeQues){
                         var lblrdbtn = document.createElement('label');
                         lblrdbtn.setAttribute("for", "opt" + i);
                         lblrdbtn.setAttribute("lang", "en");
+                        lblrdbtn.setAttribute("class", "lblAnsw");
                         if(i == posTrueAns) { var txtlbl = document.createTextNode("True"); }
                         else { var txtlbl = document.createTextNode("False"); }
                         lblrdbtn.appendChild(txtlbl);
@@ -578,6 +681,7 @@ function nextQues(typeQues){
                         lblrdbtnEs.setAttribute("for", "opt" + i);
                         lblrdbtnEs.setAttribute("lang", "es");
                         lblrdbtnEs.setAttribute('style','display: none;');
+                        lblrdbtnEs.setAttribute("class", "lblAnsw");
                         if(i == posTrueAns) { var txtlblEs = document.createTextNode("Verdadero"); }
                         else { var txtlblEs = document.createTextNode("Falso"); }
                         lblrdbtnEs.appendChild(txtlblEs);
@@ -663,6 +767,7 @@ function nextQues(typeQues){
                         var lblrdbtn = document.createElement('label');
                         lblrdbtn.setAttribute("for", "opt" + i);
                         lblrdbtn.setAttribute("lang", "en");
+                        lblrdbtn.setAttribute("class", "lblAnsw");
                         if(i == posTrueAns) { var txtlbl = document.createTextNode("True"); }
                         else { var txtlbl = document.createTextNode("False"); }
                         lblrdbtn.appendChild(txtlbl);
@@ -671,6 +776,7 @@ function nextQues(typeQues){
                         lblrdbtnEs.setAttribute("for", "opt" + i);
                         lblrdbtnEs.setAttribute("lang", "es");
                         lblrdbtnEs.setAttribute('style','display: none;');
+                        lblrdbtnEs.setAttribute("class", "lblAnsw");
                         if(i == posTrueAns) { var txtlblEs = document.createTextNode("Verdadero"); }
                         else { var txtlblEs = document.createTextNode("Falso"); }
                         lblrdbtnEs.appendChild(txtlblEs);
@@ -696,10 +802,24 @@ function nextQues(typeQues){
     else if(quizState > 10){
         $('#exQuest').hide();
         $('#finalScore').show();
+        $('#Footer').hide();
         
         var element = document.getElementById("quizScore");
         element.innerHTML = '';
         element.innerHTML = resQuiz + "/10";
+
+        if(resQuiz < 3){
+            $('#quest1').show(); setTimeout(function() { $('#quest1').hide()}, 2500);
+        }
+        else if(resQuiz < 6){
+            $('#quest2').show(); setTimeout(function() { $('#quest2').hide()}, 2500);
+        }
+        else if(resQuiz < 10){
+            $('#quest3').show(); setTimeout(function() { $('#quest3').hide()}, 2500);
+        }
+        else if(resQuiz == 10){
+            $('#quest4').show(); setTimeout(function() { $('#quest4').hide()}, 2500);
+        }
     }
 }
 
@@ -716,7 +836,9 @@ function checkAnsw(){
         return true;
     }
     else{
-        alert("Error! Select one answer. | ¡Error! Selecciona una respuesta.")
+        $('#errorAnsw').show();
+        setTimeout(function() { $('#errorAnsw').hide()}, 2500);
+        quizState--;
         return false;
     }
 }
@@ -726,4 +848,21 @@ function restartQuiz(){
     view(3);
     $('#exInit').show();
     $('#exQuest').hide();
+    $('#Footer').show();
+}
+
+/* Fav Icon */
+document.head = document.head || document.getElementsByTagName('head')[0];
+
+function changeFavicon() {
+    var link = document.createElement('link'), oldLink = document.getElementById('dynamic-favicon');
+    link.id = 'dynamic-favicon';
+    link.rel = 'shortcut icon';
+    
+    var favIcon = Math.floor(Math.random() * (2 - 0)) + 0;
+    if(favIcon < 1){ link.href = "./img/pi.ico"; }
+    else{ link.href = "./img/sigma.ico"; }
+    
+    if (oldLink) { document.head.removeChild(oldLink); }
+    document.head.appendChild(link);
 }
