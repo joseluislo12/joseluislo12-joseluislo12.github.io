@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Toggle Google Analytics</title>
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <script>
+			function carga(){
+				if (document.cookie.indexOf("ga-disable-UA-144551662-1") < 0) {
+					document.getElementById('Desactivar').style.display = 'block';
+					document.getElementById('Activar').style.display = 'none';
+				}else {    
+					document.getElementById('Desactivar').style.display = 'none';
+					document.getElementById('Activar').style.display = 'block';
+				}
+			}
+        </script>
+        
+        <script>
+			var gaProperty = 'UA-165389232-1';
+
+            var disableStr = 'ga-disable-' + gaProperty;
+            if (document.cookie.indexOf(disableStr + '=true') > -1) { 
+                window[disableStr] = true;
+                document.getElementById('Desactivar').style.display = 'none';
+                document.getElementById('Activar').style.display = 'block';
+            }
+
+            function gaOptout() {
+                document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+                window[disableStr] = true;
+                document.getElementById('Desactivar').style.display = 'none';
+                document.getElementById('Activar').style.display = 'block';
+            }
+
+            function clear(){
+                document.cookie = disableStr + '=; Max-Age=-99999999;';
+                document.getElementById('Desactivar').style.display = 'block';
+                document.getElementById('Activar').style.display = 'none';
+            }
+        </script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165389232-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-165389232-1');
+        </script>
+	</head>
+	<body>
+        <!-- CONTENT -->
+		<div class="main">
+            <p id="Desactivar"><a href="javascript:gaOptout()">Pulse para desactivar el seguimiento de Google Analytics</a></p>
+		    <p id="Activar"><a href="javascript:clear()">Pulse para activar el seguimiento de Google Analytics</a></p>
+        </div>
+    </body>
+</html>
