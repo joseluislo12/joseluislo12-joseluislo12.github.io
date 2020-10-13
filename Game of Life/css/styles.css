@@ -1,0 +1,361 @@
+/**************************************************|
+|**************************************************|
+|******************* RESET CSS ********************|
+|**************************************************|
+|**************************************************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table{
+    border-spacing: 0;
+}
+fieldset,img{
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th{
+    text-align: left;
+ 
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after{
+    content:'';
+}
+abbr,acronym{
+    border: 0;
+}
+ 
+/**************************************************|
+|**************************************************|
+|****************** PERSONAL CSS ******************|
+|**************************************************|
+|**************************************************/
+ 
+/* ---------- GENERAL ---------- */
+/* Colors */
+:root{
+    /* Global */
+    --red_Global: #820303;
+        --red_Global_alpha__6: #82030399;
+    --grey_Global: #333333;
+ 
+    /* Header */
+    --header_color: #f2f2f2;
+ 
+    /* Colors */
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins';
+}
+/* Content - Margin Top */
+.main{
+    margin-top: 100px;
+}
+
+/* Text */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* HR */
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--white), var(--red_Global), var(--white));
+}
+
+/* ---------- HEADER ---------- */
+/* Header */
+#header{
+    position:fixed;
+    height: 70px;
+    display:block;
+    width: 100%;
+    background: var(--grey_Global);
+    z-index:9;
+    text-align:center;
+    color: var(--header_color);
+    padding: 25px 0 0 0;
+    top: 0px;
+}
+
+/* Logo + Mark */
+mark{
+  background-color: var(--red_Global_alpha__6);
+  color: var(--white);
+}
+.logo{
+    float: left;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.logo a mark {
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+/* ---------- TITLE ---------- */
+/* Title */
+.title a{
+    font-size: 25px;
+    color: var(--grey_Global);
+    text-transform: uppercase;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.title a:hover, .title a:focus, .title a:active{
+    color: var(--white);
+    background: var(--red_Global);
+    padding: 10px 30px;
+    margin: 0 10px;
+    border-radius: 10px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* ---------- OPTIONS ---------- */
+/* General Button */
+.buttonOpt, .buttonOptRes {
+	border: 3px solid var(--red_Global);
+	border-radius: 50px;
+	color: var(--red_Global);
+	background-color: var(--white);
+	padding: 15px 35px;
+	margin: 0 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.buttonOpt:hover, .buttonOptRes:hover {
+	border-radius: 50px;
+	background: var(--red_Global);
+	color: var(--white);
+}
+.buttonOpt.disabled, .buttonOpt.disabled:hover {
+    border: 3px solid var(--grey_Global);
+    background: var(--grey_Global);
+    color: var(--white);
+    pointer-events: none;
+}
+/* Icons */
+.buttonOpt.random:after {
+	content: '\f074';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+.buttonOpt.select:after {
+	content: '\f245';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+.buttonOpt.start:after {
+	content: '\f04b';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+.buttonOpt.pause:after {
+	content: '\f04c';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+.buttonOpt.stop:after {
+	content: '\f04d';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+/* Responsive Icons */
+.buttonOptRes.random:after {
+	content: '\f074';
+	font-family: FontAwesome;
+}
+.buttonOptRes.select:after {
+	content: '\f245';
+	font-family: FontAwesome;
+}
+.buttonOptRes.start:after {
+	content: '\f04b';
+	font-family: FontAwesome;
+}
+.buttonOptRes.pause:after {
+	content: '\f04c';
+	font-family: FontAwesome;
+}
+.buttonOptRes.stop:after {
+	content: '\f04d';
+	font-family: FontAwesome;
+}
+
+/* ---------- SETTINGS ---------- */
+/* Settings */
+.settings{
+    border: solid 2px var(--red_Global);
+    padding: 20px;
+}
+.settings p{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/* ---------- INFO ---------- */
+/* Image */
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Quote */
+.quote {
+    color:var(--grey_Global);
+}
+/* center the blockquote in the page */
+.blockquote-wrapper {
+    display: flex;
+    /*height: 100vh;*/
+    padding: 0 20px;
+}
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    max-width: 500px;
+    /*margin: 80px auto;*/
+    align-self: center;
+}
+/* Blockquote header */
+.blockquote h1 {
+    position: relative; /* for pseudos */
+    color: var(--red_Global);
+    font-size: 20px;
+    /*font-weight: normal;*/
+    line-height: 1;
+    margin: 0;
+    border: 2px solid var(--white);
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+/* Blockquote right double quotes */
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid var(--red_Global);
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--white);
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}*/
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 1em;
+        line-height: 1.2;
+    }
+}
+/* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: var(--grey_Global);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+.blockquote h4:first-letter {
+    margin-left:-200px;
+}
+
+/* Rules */
+.rules {
+    background-color: var(--red_Global);
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.rulesTitle{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.iconList {
+    margin-left: -20px;
+}
+li {
+    margin-top: 25px;
+}
+.buttonOpt.wiki:after {
+	content: '\f266';
+	font-family: FontAwesome;
+	padding-left: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+/* Position */
+#Footer{
+    height: 60px;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    color: var(--white);
+    padding: 20px 0 0 0;
+    background: var(--grey_Global);
+    /*bottom: 0px;
+    position: absolute;*/
+}
+#Footer h6{
+    color: var(--white);
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Recommended Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="language" content="english"> 
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="author" content="Jose Lobo">
+        <meta name="designer" content="Jose Lobo">
+        <meta name="publisher" content="Jose Lobo">
+
+        <!--Search Engine Optimization Meta Tags-->
+        <title>Conway's Game of Life</title>
+        <meta name="description" content="Example of Conway's Game of Life using javascript">
+        <meta name="keywords" content="conway, gameoflife, game of life, javascript">
+        <meta name="robots" content="index,follow">
+        <meta name="revisit-after" content="7 days">
+        <meta name="distribution" content="web">
+        <meta name="robots" content="noodp">
+        <link rel="shortcut icon" href="../img/favicon.ico" />
+        
+        <!--Optional Meta Tags-->
+        <meta name="distribution" content="web">
+        <meta name="web_author" content="Jose Lobo">
+        <meta name="rating" content="general">
+        <meta name="rating" content="safe for kids">
+        <meta name="subject" content="Personal">
+        <meta name="title" content="Conway's Game of Life">
+        <meta name="copyright" content="Copyright 2020">
+        <meta name="reply-to" content="j.lobolara@gmail.com">
+        <meta name="abstract" content="Example of Conway's Game of Life using javascript">
+        <meta name="city" content="New York City">
+        <meta name="country" content="USA">
+        <meta name="distribution" content="global">
+        <meta name="classification" content="Example of Conway's Game of Life using javascript">
+    
+        <!--Meta Tags for HTML pages on Mobile-->
+        <meta name="format-detection" content="telephone=yes"/>
+        <meta name="HandheldFriendly" content="true"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!--http-equiv Tags-->
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+        <!-- CSS -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!-- FontAwesome-->
+        <script src="https://kit.fontawesome.com/0c2ba6e71a.js" crossorigin="anonymous"></script>
+        <!-- Styles -->
+        <link href='./css/styles.css' rel='stylesheet'>
+    </head>
+    <body onload="init()">
+        <header id="header" class="header">
+            <h2 class="logo noselect">
+                <a href="#"><mark>Conway's Game of Life</mark></a>
+            </h2>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="main">
+            <div class="container">
+                <!-- Title -->
+                <div class="row align-items-center text-center justify-content-center">
+                    <div class="col title noselect">
+                        <a>Select an option</a>
+                    </div>
+                </div>
+
+                <br>
+                
+                <!-- Options -->
+                <div class="row align-items-center text-center justify-content-center">
+                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                        <button class="buttonOpt random noselect" id="btnRandom" onclick="btnRandom()">Random</button>
+                    </div>
+                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                        <button class="buttonOpt select noselect" id="btnSelect"onclick="btnSelect()">Select</button>
+                    </div>
+                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                        <button class="buttonOpt start noselect" id="btnStart"onclick="btnStart()">Start</button>
+                    </div>
+                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                        <button class="buttonOpt pause noselect" id="btnPause"onclick="btnPause()">Pause</button>
+                    </div>
+                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                        <button class="buttonOpt stop noselect"id="btnStop"onclick="btnStop()">Stop</button>
+                    </div>
+                </div>
+
+                <!-- Options Responsive -->
+                <div class="row align-items-center text-center justify-content-center">
+                    <div class="col-sm-4 d-md-none">
+                        <button class="buttonOptRes random" id="btnRandomRes" onclick="btnRandom()"></button>
+                    </div>
+                    <div class="col-sm-4 d-md-none">
+                        <button class="buttonOptRes select" id="btnSelectRes"onclick="btnSelect()"></button>
+                    </div>
+                    <div class="col-sm-4 d-md-none">
+                        <button class="buttonOptRes start" id="btnStartRes"onclick="btnStart()"></button>
+                    </div>
+                    <div class="col-sm-4 d-md-none">
+                        <button class="buttonOptRes pause" id="btnPauseRes"onclick="btnPause()"></button>
+                    </div>
+                    <div class="col-sm-4 d-md-none">
+                        <button class="buttonOptRes stop"id="btnStopRes"onclick="btnStop()"></button>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <!-- Canvas and settings -->
+                <div class="row align-items-center text-center justify-content-center">
+                    <!-- Settings -->
+                    <div class="col-sm-10 col-md-3 noselect settings">
+                        <div class="row align-items-center text-center justify-content-center">
+                            <p>Settings</p>
+                        </div>
+                        <br>
+                        <!-- Live color -->
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col">
+                                <label for="colorLive">Live Color</label>
+                            </div>
+                            <div class="col">
+                                <input type="color" value="#820303" id="colorLive">
+                            </div>
+                        </div>
+                        <!-- Dead color -->
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col">
+                                <label for="colorDead">Dead Color</label>
+                            </div>
+                            <div class="col">
+                                <input type="color" value="#6B6B6B" id="colorDead">
+                            </div>
+                        </div>
+                        <!-- Cell's Size
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col">
+                                <label for="cellSize">Cell's Size</label>
+                            </div>
+                            <div class="col">
+                                <input type="range" min="5" max="50" value="15" class="slider" id="cellSize">
+                            </div>
+                        </div> -->
+                        <!-- Speed -->
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col">
+                                <label for="gameSpeed">Speed</label>
+                            </div>
+                            <div class="col">
+                                <input type="range" min="10" max="490" value="200" class="slider" id="gameSpeed">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Canvas -->
+                    <div class="col-sm-10 col-md-9">
+                        <canvas id="gamefield" width="800" height="500"></canvas>
+                    </div>
+                </div>
+
+                <br><hr><br>
+
+                <!-- Story -->
+                <div class="row align-items-center text-center justify-content-center noselect">
+                    <!-- John Horton Conway -->
+                    <div class="col-sm-10 col-md-6">
+                        <div class="row align-items-center text-center justify-content-center">
+                            <!-- Quote -->
+                            <div class="col-10">
+                                <div class="blockquote-wrapper">
+                                    <div class="blockquote">
+                                    <h1>
+                                    People think that mathematics is complicated. <span class="quote">Mathematics is the simple bit</span>, it’s the stuff we CAN understand. <span class="quote">It’s cats that are complicated.</span>
+                                    </h1>
+                                    <h4>&mdash;John Horton Conway<br></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Picture -->
+                            <div class="col-10">
+                                <img src="https://live.staticflickr.com/17/20366806_3021bd13ff_b.jpg" alt="John Horton Conway">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conway's Game of Life -->
+                    <div class="col-sm-10 col-md-6">
+                        <!-- Info -->
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col-10">
+                                The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <!-- Rules -->
+                        <div class="row align-items-center text-center justify-content-center rules">
+                            <div class="col-10">
+                                <p class="rulesTitle">Rules:</p>
+
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li iconList"><i class="far fa-smile-beam fa-3x"></i></span>Any live cell with two or three live neighbours survives.</li>
+                                    <li><span class="fa-li iconList"><i class="far fa-laugh fa-3x"></i></span>Any dead cell with three live neighbours becomes a live cell.</li>
+                                    <li><span class="fa-li iconList"><i class="far fa-dizzy fa-3x"></i></span>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</li>
+                                  </ul>
+                            </div>
+                        </div>
+
+                        <br>
+                        
+                        <!-- More Info -->
+                        <div class="row align-items-center text-center justify-content-center">
+                            <div class="col-10">
+                                <a class="buttonOpt wiki" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- FOOTER -->
+        <br>
+		<footer id="Footer">
+			<div class="container">
+				<div class="row align-items-center no-gutters justify-content-center">
+					<div id="Copyright">
+						<span>
+                            <h6>Copyright &copy; 2020 | <a href="https://joseluislo12.github.io/">Jose Lobo</a></h6></h6>
+						</span>
+					</div>
+				</div>
+			</div>
+        </footer>
+
+        <!-- JavaScript -->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Personal -->
+        <script src="./js/gameOfLife.js"></script>
+        <script src="./js/setup.js"></script>
+    </body>
+</html>

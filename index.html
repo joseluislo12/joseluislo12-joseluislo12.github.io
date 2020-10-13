@@ -43,26 +43,6 @@
         <meta http-equiv="Content-Style-Type" content="text/css">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
 
-        <!--Google-->
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MV2RMZV');
-        </script>
-        <!-- Google Verification -->
-        <meta name="google-site-verification" content="84xJ3f9akzwEU1v6pxWBVqIAFlbd4TVw7kiBFgp8VZA" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165389232-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-165389232-1');
-        </script>
-
         <!-- CSS -->
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -79,13 +59,6 @@
         <link href='./css/styles.css' rel='stylesheet'>
 	</head>
 	<body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV2RMZV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        
-        <!-- HEADER -->
         <header id="header" class="header">
             <h2 class="logo">
                 <a href="#home"><mark>Jose Lobo</mark></a>
@@ -388,12 +361,12 @@
                     <div class="row align-items-center">
                         <div class="col-12 text-center btns-filter">
                             <button class="btn btn-default filter-button btn_filter_active" data-filter="all" onclick="filter(0)" id="btn_all">
-                                <p lang="en">All (4)</p>
-                                <p lang="es">Todo (4)</p>
+                                <p lang="en">All (3)</p>
+                                <p lang="es">Todo (3)</p>
                             </button>
                             <button class="btn btn-default filter-button" data-filter="web_site" onclick="filter(1)" id="btn_f1">
-                                <p lang="en">Websites (2)</p>
-                                <p lang="es">Páginas Web (2)</p>
+                                <p lang="en">Websites (1)</p>
+                                <p lang="es">Páginas Web (1)</p>
                             </button>
                             <button class="btn btn-default filter-button" data-filter="web_app" onclick="filter(2)" id="btn_f2">
                                 <p lang="en">Web App (1)</p>
@@ -451,7 +424,60 @@
                                     </a>
                                 </div>
                             </div>
+                            <!-- Empty -->
+                            <div class="col-12 mix filter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- OTHER PROJECTS -->
+				<div class="section" id="section4">
+                    <div class="row align-items-top">
+                        <div class="col-12 text-center">
+                            <div class="container_title" id="title_port2">
+                                <div class="document">
+                                    <h1 lang="en">Other projects</h1>
+                                    <h1 lang="es">Otros proyectos</h1>
+                                    <hr class="brace">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center btns-filter">
+                            <button class="btn btn-default filter-button btn_filter_active" data-filter="all" onclick="filter(0)" id="btn_all">
+                                <p lang="en">All (2)</p>
+                                <p lang="es">Todo (2)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="web_site" onclick="filter(1)" id="btn_f1">
+                                <p lang="en">Websites (2)</p>
+                                <p lang="es">Páginas Web (2)</p>
+                            </button>
+                            <!--<button class="btn btn-default filter-button" data-filter="web_app" onclick="filter(2)" id="btn_f2">
+                                <p lang="en">Web App (1)</p>
+                                <p lang="es">Aplicaciones Web (1)</p>
+                            </button>
+                            
+                                <button class="btn btn-default filter-button" data-filter="mobile_app" onclick="filter(3)" id="btn_f3">
+                                <p lang="en">Mobile App (1)</p>
+                                <p lang="es">Aplicaciones móviles (1)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="desktop_app" onclick="filter(4)" id="btn_f4">
+                                <p lang="en">Desktop App (0)</p>
+                                <p lang="es">Aplicaciones de Escritorio (0)</p>
+                            </button>
+                            <button class="btn btn-default filter-button" data-filter="others" onclick="filter(5)" id="btn_f5">
+                                <p lang="en">Others (0)</p>
+                                <p lang="es">Otros (0)</p>
+                            </button>
+                        -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-inner">
+                        <div class="row align-items-center">
                             <div class="col-10 offset-1 col-md-4 col-lg-3 offset-lg-2 text-center mix filter web_site">
                                 <div class="gallery_product" lang="en">
                                     <a href="./img/portf/vocabulary.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;https://joseluislo12.github.io/Math/index.html&apos; &gt;Math Vocabulary	- Algrebra I	|		Go to&lt;/a&gt;">
@@ -465,6 +491,19 @@
                                 </div>
                             </div>
 
+                            <div class="col-10 offset-1 col-md-4 col-lg-3 offset-lg-2 text-center mix filter web_site">
+                                <div class="gallery_product" lang="en">
+                                    <a href="./img/portf/vocabulary.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;https://joseluislo12.github.io/Game of Life/index.html&apos; &gt;Game of Life	|		Go to&lt;/a&gt;">
+                                        <img src="./img/portf/vocabulary.png" alt="Math Vocabulary	- Algrebra I">
+                                    </a>
+                                </div>
+                                <div class="gallery_product" lang="es">
+                                    <a href="./img/portf/game_of_life.png" class="portfolio-popup" title="&lt;a target=&apos;_blank&apos; href=&apos;https://joseluislo12.github.io/Game of Life/index.html&apos;&gt;Game of Life		|		Ir a&lt;/a&gt;">
+                                        <img src="./img/portf/game_of_life.png" alt="Game of Life">
+                                    </a>
+                                </div>
+                            </div>
+
                             <!-- Empty -->
                             <div class="col-12 mix filter">
                             </div>
@@ -473,7 +512,7 @@
                 </div>
 
                 <!-- EDUCATION -->
-                <div class="section" id="section4">
+                <div class="section" id="section5">
                     <div class="slide" id="slide1">
                         <div class="row align-items-top">
                             <div class="col-12 text-center">
@@ -611,7 +650,7 @@
                 </div>-->
 
                 <!-- CONTACT -->
-                <div class="section" id="section5">
+                <div class="section" id="section6">
                     <div class="row align-items-top">
                         <div class="col-12 text-center">
                             <div class="container_title" id="title_port">
